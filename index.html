@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <nav role="navigation">
-      <header><img src="/src/img/logo.svg" alt="polly logo" /></header>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image" href="/src/img/logo_closed.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polly App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+</head>
+
+<body>
+  <div class="flex-container">
+    <nav role="navigation" aria-expanded="true">
+      <div class="anchor"><i class="fa fa-arrow-left"></i></div>
+      <header><img src="/src/img/logo.svg" alt="polly logo" /><img src="/src/img/logo_closed.png" class="closed-icon"
+          alt="polly logo"></header>
+      <div class="section-title">Components<span class="closed-icon">C</span>
+      </div>
       <ul>
-        <li class="list-item">Link Item</li>
-        <li class="list-item">Link Item</li>
-        <li class="list-item">Link Item</li>
+        <li class="list-item"><i class="fa-brands fa-codepen"></i>Link Item<i
+            class="fa-brands fa-codepen closed-icon"></i>
+        </li>
+        <li class="list-item"><i class="fa-brands fa-codepen"></i>Link Item<i
+            class="fa-brands fa-codepen closed-icon"></i>
+        </li>
+        <li class="list-item"><i class="fa-brands fa-codepen"></i>Link Item<i
+            class="fa-brands fa-codepen closed-icon"></i>
+        </li>
       </ul>
     </nav>
-    <div class="container"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+    <div class="custom-container">
+      <button class="btn btn-primary">test</button>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>

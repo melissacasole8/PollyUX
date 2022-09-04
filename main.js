@@ -1,6 +1,8 @@
-import "./src/components/card/card.css";
-import "./tokens.css";
+
 import "./main.css";
+import "./src/components/nav/nav.js";
+
+
 
 // keeping this for future reference
 
