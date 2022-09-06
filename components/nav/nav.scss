@@ -1,4 +1,3 @@
-
 nav {
   background: var(--white--100);
   box-shadow: var(--elevation--medium);
@@ -12,13 +11,12 @@ nav {
   .closed-icon {
     transition: transform 0.4s ease-in-out;
     opacity: 0;
-      width: 40px;
-      text-align: center;
-      padding: 0;
-      margin: 0;
-      transform: translateX(-14em);
+    width: 40px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    transform: translateX(-14em);
   }
-
 
   .anchor {
     cursor: pointer;
@@ -39,7 +37,7 @@ nav {
     }
   }
   header {
-    padding-bottom: .5em;
+    padding-bottom: 0.5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,23 +47,23 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 0 .15em 0;
+    padding: 1em 0 0.15em 0;
     font-size: var(--roboto--14px--medium);
     font-weight: 500;
     text-transform: uppercase;
     color: var(--black--500);
-    
   }
 
   ul {
     li {
       transition: all 0.4s ease;
-      padding: .5em 0;
+      padding: 0.5em 0;
       display: flex;
       justify-content: start;
       align-items: center;
-      i, svg {
-        margin-right: .5em;
+      i,
+      svg {
+        margin-right: 0.5em;
         width: 18px;
         height: 18px;
         display: flex;
@@ -84,7 +82,7 @@ nav {
 
   //these things happen when the nav is closed
 
-  &.closed{
+  &.closed {
     margin-left: -145px;
     .anchor {
       transform: rotate(180deg);
@@ -96,7 +94,7 @@ nav {
     }
 
     .closed-icon {
-      transform: translateX(.7em);
+      transform: translateX(0.7em);
       opacity: 1;
     }
   }

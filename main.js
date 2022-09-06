@@ -1,5 +1,5 @@
 // import "/main.css";
-import "/components/nav/nav.js";
+import "components/nav/nav.js";
 
 // keeping this for future reference
 
