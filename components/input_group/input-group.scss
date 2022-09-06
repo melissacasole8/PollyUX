@@ -1,50 +1,53 @@
-
 //overriding very specific boostrap styles
-.input-group > :not(:first-child):not(.dropdown-menu):not(.form-floating):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback), .input-group > .form-floating:not(:first-child) > .form-control, .input-group > .form-floating:not(:first-child) > .form-select {
-    border-bottom-left-radius: 8px;
-    border-top-left-radius: 8px;
+.input-group
+  > :not(:first-child):not(.dropdown-menu):not(.form-floating):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback),
+.input-group > .form-floating:not(:first-child) > .form-control,
+.input-group > .form-floating:not(:first-child) > .form-select {
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
 }
-
 
 // custom styles here
 
 .input-wrap {
-    margin: .675em 0;
+  margin: 0.675em 0;
 
-    label {
-        display: none;
-        padding-left: 1em;
-        color: var(--black--600);
-        font-size: var(--roboto--12px--regular);
+  label {
+    display: none;
+    padding-left: 1em;
+    color: var(--black--600);
+    font-size: var(--roboto--12px--regular);
+  }
+
+  .input-group {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    i,
+    svg {
+      z-index: 4;
+      position: absolute;
+      left: 0.5em;
+      color: var(--primary--900);
+      path {
+        color: var(--primary--900);
+      }
+
+      + input {
+        padding-left: 2em;
+      }
     }
 
-    .input-group {
-        align-items: center;
-        justify-content: center;
-        position: relative;
-
-        i,
-        svg {
-            z-index: 4;
-            position: absolute;
-            left: .5em;
-            color: var(--primary--900);
-
-            + input {
-                padding-left: 2em;
-            }
-        }
-
-        .form-control {
-            border-radius: 8px;
-            border-color: var(--black--200);
-            &:focus {
-                box-shadow: var(--input--box-shadow);
-            }
-            &::placeholder {
-                color: var(--black--500);
-            }
-        }
+    .form-control {
+      border-radius: 8px;
+      border-color: var(--black--200);
+      &:focus {
+        box-shadow: var(--input--box-shadow);
+      }
+      &::placeholder {
+        color: var(--black--500);
+      }
     }
-
+  }
 }
