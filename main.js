@@ -1,6 +1,6 @@
 
-import "./main.css";
-import "./src/components/nav/nav.js";
+import "/main.css";
+import "/src/components/nav/nav.js";
 
 
 
