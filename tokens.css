@@ -152,7 +152,8 @@
  /*Elevation Inputs*/
  --input--box-shadow:0 0 0px 1px var(--primary--900);
 
-
+/*Elevation Buttons during focus*/
+--elevation--primary: 0 10px 19px 0px hsl(207deg 83% 53% / 50%);
 
   /* SEMANTIC TOKENS */
 

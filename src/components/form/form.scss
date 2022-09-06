@@ -4,27 +4,64 @@ form {
     color: var(--primary--900);
     padding: 1.5em;
     border: none;
-    box-shadow: var(--elevation--medium);    width: 100%;
+    box-shadow: var(--elevation--medium);
+    width: 100%;
 
     .logo {
         width: 100%;
         align-items: center;
         display: flex;
         justify-content: center;
+        margin-bottom: 2em;
+
+        img {
+            width: 200px;
+        }
     }
 
-    &.form-md {
-        max-width: var(--form-md);
+    header {
+        text-align: center;
+        margin: 2em 0;
+
+        h1 {
+            font-size: var(--roboto--32px--regular);
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: var(--roboto-18px--regular);
+            font-weight: 400;
+        }
     }
 
     .form-footer {
-        gap: .750em;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        section{
+            text-align: center;
+            margin: 2em 0;
+            p{
+                padding: .5em 0;
+            }
+        }
+        .buttons {
+            gap: .750em;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
         .btn {
             width: 100%;
         }
     }
+
+
+
+    //form sizes
+    &.form-md {
+        max-width: var(--form-md);
+        padding: 2em;
+    }
+
+
 }
