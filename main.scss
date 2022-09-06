@@ -2,11 +2,11 @@
 @import "./tokens.css";
 
 // custom components
-@import '/src/components/nav/nav.css';
+@import './src/components/nav/nav.css';
 @import "./src/components/card/card.css";
-@import "/src/components/input_group/input-group.css";
-@import "/src/components/form/form.css";
-@import "/src/components/button/button.css";
+@import "./src/components/input_group/input-group.css";
+@import "./src/components/form/form.css";
+@import "./src/components/button/button.css";
 
 
 // this is importing bootstrap - but the styles override the custom styles
