@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nav</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="nav.css" />
+
+</head>
+
+<body>
+  <nav role="navigation" aria-expanded="true">
+    <div class="anchor"><i class="fa fa-arrow-left"></i></div>
+    <header><img src="/src/img/logo.svg" alt="polly logo" /><img src="/src/img/logo_closed.png" class="closed-icon"
+        alt="polly logo"></header>
+    <div class="section-title">Components<span class="closed-icon">C</span>
+    </div>
+    <ul>
+      <li class="list-item"><i class="fa-brands fa-codepen"></i>Link Item<i
+          class="fa-brands fa-codepen closed-icon"></i>
+      </li>
+      <li class="list-item"><i class="fa-brands fa-codepen"></i>Link Item<i
+          class="fa-brands fa-codepen closed-icon"></i>
+      </li>
+      <li class="list-item"><i class="fa-brands fa-codepen"></i>Link Item<i
+          class="fa-brands fa-codepen closed-icon"></i>
+      </li>
+    </ul>
+  </nav>
+  <script type="module" src="./nav.js"></script>
+</body>
+
+</html>

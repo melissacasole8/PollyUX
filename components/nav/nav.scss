@@ -1,0 +1,103 @@
+
+nav {
+  background: var(--white--100);
+  box-shadow: var(--elevation--medium);
+  padding: 1em;
+  width: 200px;
+  height: 100vh;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+
+  //this controls the visibility of the icons that show when the nav is closed
+  .closed-icon {
+    transition: transform 0.4s ease-in-out;
+    opacity: 0;
+      width: 40px;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      transform: translateX(-14em);
+  }
+
+
+  .anchor {
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: absolute;
+    right: -20px;
+    top: 42px;
+    border: 1px solid var(--black--300);
+    border-radius: 99em;
+    background: var(--white--100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    &:hover {
+      border-color: var(--primary--900);
+    }
+  }
+  header {
+    padding-bottom: .5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0 .15em 0;
+    font-size: var(--roboto--14px--medium);
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--black--500);
+    
+  }
+
+  ul {
+    li {
+      transition: all 0.4s ease;
+      padding: .5em 0;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      i, svg {
+        margin-right: .5em;
+        width: 18px;
+        height: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &:hover {
+        color: var(--primary--900);
+        cursor: pointer;
+        i {
+          color: var(--primary--900);
+        }
+      }
+    }
+  }
+
+  //these things happen when the nav is closed
+
+  &.closed{
+    margin-left: -145px;
+    .anchor {
+      transform: rotate(180deg);
+    }
+    ul {
+      li {
+        justify-content: space-between;
+      }
+    }
+
+    .closed-icon {
+      transform: translateX(.7em);
+      opacity: 1;
+    }
+  }
+}

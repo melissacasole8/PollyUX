@@ -1,0 +1,120 @@
+//custom style tokens
+@import "/tokens.css";
+
+// custom components
+@import "/components/nav/nav.css";
+@import "/components/card/card.css";
+@import "/components/input_group/input-group.css";
+@import "/components/form/form.css";
+@import "/components/button/button.css";
+
+// this is importing bootstrap - but the styles override the custom styles
+// need to figure out how to have boostrap load first
+// @import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+/* Custom Resets found on https://piccalil.li/blog/a-modern-css-reset/ */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--black--700);
+}
+
+//remove default styling from H tags
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  transition: color 0.4s ease;
+  text-decoration: none;
+  color: var(--primary--900);
+  &:hover {
+    color: var(--primary--700);
+  }
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"],
+li,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  height: 100%;
+  text-rendering: optimizeSpeed;
+  font-family: "Roboto", sans-serif;
+  background-color: hsl(0, 0%, 96%);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+//container for flexed items
+
+.flex-container {
+  display: flex;
+}
+
+.custom-container {
+  padding: 1.5em;
+  width: 100%;
+}
