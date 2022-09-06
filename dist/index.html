@@ -10,9 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet" />
+  <!--// Import all of Bootstrap's CSS-->
   
-  <script type="module" crossorigin src="/melissacasole8/assets/index.dda7c0e4.js"></script>
-  <link rel="stylesheet" href="/melissacasole8/assets/index.7ad9b11d.css">
+
+  <!--// Import Free Font Awesome-->
+  
+  <script type="module" crossorigin src="/melissacasole8/assets/index.f0b70075.js"></script>
+  <link rel="stylesheet" href="/melissacasole8/assets/index.129668a2.css">
 </head>
 
 <body>
@@ -35,8 +39,32 @@
         </li>
       </ul>
     </nav>
-    <div class="custom-container">
-      <button class="btn btn-secondary">test</button>
+    <div class="container-fluid custom-container">
+      <form id="loginForm" class="form-lg" action="/action_page.php">
+        <div class="logo">
+          <img src="/melissacasole8/assets/logo.46c892c0.svg" alt="polly logo">
+        </div>
+        <div class="input-wrap">
+          <label for="Email">Email</label>
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="text" id="Email" name="Email" class="form-control" placeholder="Email" aria-label="Email"
+              aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div class="input-wrap">
+          <label for="Password">Password</label>
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="password" id="Password" name="Password" class="form-control" placeholder="Password"
+              aria-label="Password" aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div class="form-footer">
+          <input type="submit" class="btn btn-white" value="Cancel">
+          <input type="submit" class="btn btn-primary" value="Submit">
+        </div>
+      </form>
     </div>
   </div>
   
