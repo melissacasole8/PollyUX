@@ -1,5 +1,5 @@
 // import "/main.css";
-import "./components/nav/nav.js";
+import "/components/nav/nav.js";
 
 // keeping this for future reference
 
@@ -11,3 +11,16 @@ import "./components/nav/nav.js";
 // `;
 
 // setupCounter(document.querySelector("#counter"));
+
+$(document).ready(function () {
+  var anchor = $("nav .anchor");
+  $(anchor).click(function () {
+    var nav = $("nav");
+
+    if ($(nav).attr("aria-expanded") == "true") {
+      $(nav).attr("aria-expanded", false).addClass("closed");
+    } else {
+      $(nav).attr("aria-expanded", true).removeClass("closed");
+    }
+  });
+});
