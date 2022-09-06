@@ -1,12 +1,12 @@
 //custom style tokens
-@import "/tokens.css";
+@import "tokens.css";
 
 // custom components
-@import "/components/nav/nav.css";
-@import "/components/card/card.css";
-@import "/components/input_group/input-group.css";
-@import "/components/form/form.css";
-@import "/components/button/button.css";
+@import "components/nav/nav.css";
+@import "components/card/card.css";
+@import "components/input_group/input-group.css";
+@import "components/form/form.css";
+@import "components/button/button.css";
 
 // this is importing bootstrap - but the styles override the custom styles
 // need to figure out how to have boostrap load first
