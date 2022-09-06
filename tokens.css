@@ -102,7 +102,7 @@
   --grape--800: rgba(54, 30, 148, 1);
   --grape--900: rgba(46, 26, 127, 1);
 
-  /*/* Text-size styles */
+  /*/* Text-size */
   /* base size: roboto--16px--regular (16px) */
   --roboto--90px--regular: 5.62rem;
   --roboto--64px--regular: 4rem;
@@ -112,7 +112,8 @@
   --roboto--18px--regular: 1.12rem;
   --roboto--16px--regular: 1rem;
   --roboto--24px--regular: 1.5rem;
-  --roboto--12px--regular: 0.62rem;
+  --roboto--12px--regular: 0.75rem;
+  --roboto--10px--regular: 0.625rem;
   --roboto--8px--regular: 0.5rem;
   --roboto--14px--regular: 0.88rem;
   --roboto--14px--medium: 0.88rem;
@@ -138,44 +139,7 @@
   --roboto--32px--bold: 2rem;
   --roboto--8px--bold: 0.5rem;
 
-  /* base size: heading--x-x-x-small (16px) */
-  --heading--x-x-x-small: 1rem;
-  --heading--x-x-x-small--strong: 1rem;
-  --heading--x-x-small: 1.12rem;
-  --heading--x-x-small--strong: 1.12rem;
-  --heading--x-small: 1.25rem;
-  --heading--x-small--strong: 1.25rem;
-  --heading--small: 1.5rem;
-  --heading--small--strong: 1.5rem;
-  --heading--medium: 1.75rem;
-  --heading--medium--strong: 1.75rem;
-  --heading--large: 2.12rem;
-  --heading--large--strong: 2.12rem;
-  --heading--x-large---light: 2.5rem;
-  --heading--x-large: 2.5rem;
-  --heading--x-large--strong: 3rem;
-  --label--large: 1.12rem;
-  --label--large--strong: 1.12rem;
-  --label--medium: 1rem;
-  --label--medium--strong: 1rem;
-  --label--small: 0.88rem;
-  --label--small--strong: 0.88rem;
-  --label--small--x-strong: 0.88rem;
-  --label--x-small: 0.75rem;
-  --label--x-small--strong: 0.75rem;
-  --label--x-small--x-strong: 0.75rem;
-  --label--x-x-small: 0.62rem;
-  --label--x-x-small--strong: 0.62rem;
-  --label--x-x-small-x-strong: 0.62rem;
-  --paragraph--large: 1.12rem;
-  --paragraph--medium: 1rem;
-  --paragraph--small: 0.88rem;
-  --paragraph--x-small: 0.75rem;
-  --display--large: 5.5rem;
-  --display--medium: 4.5rem;
-  --display--small: 3.5rem;
-
-  /* Effect styles */
+  /* Elevation */
   --elevation--x-large: 0px 24px 28px rgba(0, 0, 0, 0.15);
   --elevation--large: 0px 0px 1px rgba(0, 0, 0, 0.04),
     0px 2px 6px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.06);
@@ -184,48 +148,17 @@
   --elevation--small: 0px 0px 1px rgba(0, 0, 0, 0.04),
     0px 0px 2px rgba(0, 0, 0, 0.06), 0px 4px 8px rgba(0, 0, 0, 0.04);
 
-  /* ALIAS TOKENS */
 
-  /*text*/
-  --primary--text: var(--black--600);
-  --text--primary: var(--black--500);
-  --text--link: rgba(36, 145, 235, 1);
-  --menus--label: rgba(168, 166, 166, 1);
+ /*Elevation Inputs*/
+ --input--box-shadow:0 0 0px 1px var(--primary--900);
 
-  /*pages*/
-  --page--background: rgba(243, 243, 243, 1);
 
-  /*buttons*/
-  --buttons--primary-resting-bg: rgba(36, 145, 235, 1);
-  --buttons--primary-resting-border: rgba(36, 145, 235, 1);
-  --buttons--primary-hover-bg: rgba(76, 173, 253, 1);
-  --buttons--primary-hover-border: rgba(76, 173, 253, 1);
-  --buttons--primary-focus-bg: rgba(28, 129, 212, 1);
-  --buttons--primary-focus-border: rgba(28, 129, 212, 1);
 
   /* SEMANTIC TOKENS */
 
-  /*inputs*/
-  --inputs--border-resting: rgba(190, 190, 190, 1);
-  --inputs--placeholder: rgba(184, 182, 182, 1);
-  --inputs--label-focused: rgba(116, 115, 115, 1);
-  --inputs--border-focus: rgba(36, 145, 235, 1);
-  --inputs--border-error: rgba(240, 61, 93, 1);
-  --inputs--border-success: rgba(15, 181, 117, 1);
-  --inputs--border-caution: rgba(230, 111, 0, 1);
-  --inputs--hover: rgba(248, 248, 248, 1);
 
-  /*navigation*/
-  --nav-link: var(--primary--text);
-
-  /*tables*/
-  --table--td_link: 0.88rem;
-  --table--th: 0.88rem;
-  --table--td: 0.88rem;
-
-  --th-bg-color: var(--gray--400);
-  --th-text-size: var(--table--th);
-  --td-bg-light: var(--white--600);
-  --td-bg-dark: var(--white--400);
-  --td-text-size: var(--table--td);
+  /*Form Sizes*/
+  --form-lg: 800px;
+  --form-md: 500px;
+  --form-sm: 300px;
 }

@@ -1,0 +1,30 @@
+form {
+    background: var(--white--100);
+    border-radius: 10px;
+    color: var(--primary--900);
+    padding: 1.5em;
+    border: none;
+    box-shadow: var(--elevation--medium);    width: 100%;
+
+    .logo {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    &.form-md {
+        max-width: var(--form-md);
+    }
+
+    .form-footer {
+        gap: .750em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .btn {
+            width: 100%;
+        }
+    }
+}
