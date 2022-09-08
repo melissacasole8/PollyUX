@@ -5,6 +5,7 @@ nav {
   width: 200px;
   height: 100vh;
   position: relative;
+  z-index: 1;
   transition: all 0.4s ease-in-out;
 
   //this controls the visibility of the icons that show when the nav is closed

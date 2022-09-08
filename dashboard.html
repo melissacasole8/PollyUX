@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image" href="img/logo_closed.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Local Polly App</title>
+    <title>Dashboard</title>
     <script
       src="https://kit.fontawesome.com/31f2e82c1d.js"
       crossorigin="anonymous"
@@ -29,11 +29,8 @@
       <nav role="navigation" aria-expanded="true">
         <div class="anchor"><i class="fa fa-arrow-left"></i></div>
         <header>
-          <img src="img/logo.svg" alt="polly logo" /><img
-            src="img/logo_closed.png"
-            class="closed-icon"
-            alt="polly logo"
-          />
+          <a href="/index.html"> <img src="img/logo.svg" alt="polly logo" /></a>
+          <img src="img/logo_closed.png" class="closed-icon" alt="polly logo" />
         </header>
         <div class="section-title">
           Components<span class="closed-icon">C</span>
@@ -56,7 +53,30 @@
           </li>
         </ul>
       </nav>
-      <div class="container-fluid custom-container m-auto"></div>
+
+      <div class="container-fluid">
+        <div class="topBar">
+          <div class="header">
+            <div class="search">
+              <div class="input-group">
+                <i class="fas fa-search"></i>
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+              </div>
+            </div>
+            <button class="btn btn-white">
+              <i class="fas fa-pause"></i>Suspend Pricing
+            </button>
+            <button class="btn btn-primary">
+              <i class="fas fa-plus"></i>New Version
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
     <script
       defer
