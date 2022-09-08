@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image" href="img/logo_closed.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Local Polly App</title>
+    <title>Polly App</title>
     <script
       src="https://kit.fontawesome.com/31f2e82c1d.js"
       crossorigin="anonymous"
@@ -25,43 +25,14 @@
   </head>
 
   <body>
-    <div class="flex-container">
-      <nav role="navigation" aria-expanded="true">
-        <div class="anchor"><i class="fa fa-arrow-left"></i></div>
-        <header>
-          <img src="img/logo.svg" alt="polly logo" /><img
-            src="img/logo_closed.png"
-            class="closed-icon"
-            alt="polly logo"
-          />
-        </header>
-        <div class="section-title">
-          Components<span class="closed-icon">C</span>
-        </div>
-        <ul>
-          <li class="list-item">
-            <i class="fa-brands fa-codepen"></i>Link Item<i
-              class="fa-brands fa-codepen closed-icon"
-            ></i>
-          </li>
-          <li class="list-item">
-            <i class="fa-brands fa-codepen"></i>Link Item<i
-              class="fa-brands fa-codepen closed-icon"
-            ></i>
-          </li>
-          <li class="list-item">
-            <i class="fa-brands fa-codepen"></i>Link Item<i
-              class="fa-brands fa-codepen closed-icon"
-            ></i>
-          </li>
-        </ul>
-      </nav>
-      <div class="container-fluid custom-container m-auto">
-        <form id="loginForm" class="form-md m-auto" action="/action_page.php">
-          <div class="logo">
+    <div class="container-fluid h-100">
+       <div class="form-container h-100">
+         <form id="loginForm" class="form-md">
+          <div class="logo" tabindex="1">
             <img src="img/logo.svg" alt="polly logo" />
           </div>
-          <header>
+         <div class="inner-content">
+           <header>
             <h1>Welcome</h1>
             <h2>Please login</h2>
           </header>
@@ -70,6 +41,7 @@
             <div class="input-group">
               <i class="fas fa-envelope"></i>
               <input
+                autocomplete="Email"
                 type="text"
                 id="Email"
                 name="Email"
@@ -95,32 +67,33 @@
               />
             </div>
           </div>
-          <div class="form-footer">
-            <section>
+             <section class="mt-4">
               <div class="buttons">
-                <input
+                <a
+                  href="/dashboard.html"
                   type="submit"
-                  class="btn btn-white d-none"
-                  value="Cancel"
-                />
-                <input type="submit" class="btn btn-primary" value="Login" />
+                  class="btn btn-primary"
+                  href="http://wwww.google.com"
+                  value="Login"
+                >Login</a>
               </div>
-              <div class="extras">
+              <div class="extras text-center mt-2">
                 <p id="forgot-pw"><a href="#">Forgot Password</a></p>
               </div>
             </section>
+         </div>
+          <div class="form-footer">
+         
             <section>
               <div class="extras">
                 <p>Dont have an account?</p>
               </div>
-              <div class="buttons">
-                <input type="submit" class="btn btn-white" value="Register" />
-              </div>
-            </section>
+                <a type="submit" class="btn btn-white" value="Register" />Register</a>
+             </section>
           </div>
-        </form>
-      </div>
-    </div>
+           </form>
+          </div>
+       </div>
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"

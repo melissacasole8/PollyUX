@@ -1,67 +1,92 @@
-form {
+.form-container {
+  background: url("/img/login-bg.jpg") no-repeat;
+  background-size: cover;
+  background-blend-mode: difference;
+  display: flex;
+  justify-content: end;
+  &::after {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  form {
     background: var(--white--100);
-    border-radius: 10px;
     color: var(--primary--900);
     padding: 1.5em;
     border: none;
     box-shadow: var(--elevation--medium);
     width: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
 
     .logo {
-        width: 100%;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 2em;
+      width: 100%;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2em;
 
-        img {
-            width: 200px;
-        }
+      img {
+        width: 200px;
+      }
     }
 
     header {
-        text-align: center;
-        margin: 2em 0;
+      text-align: center;
+      margin: 2em 0;
 
-        h1 {
-            font-size: var(--roboto--32px--regular);
-            font-weight: 400;
-        }
+      h1 {
+        font-size: var(--roboto--32px--regular);
+        font-weight: 400;
+      }
 
-        h2 {
-            font-size: var(--roboto-18px--regular);
-            font-weight: 400;
-        }
+      h2 {
+        font-size: var(--roboto-18px--regular);
+        font-weight: 400;
+      }
     }
 
     .form-footer {
-        section{
-            text-align: center;
-            margin: 2em 0;
-            p{
-                padding: .5em 0;
-            }
+      section {
+        text-align: center;
+        margin: 2em 0;
+        p {
+          padding: 0.5em 0;
         }
-        .buttons {
-            gap: .750em;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+      }
+      .buttons {
+        gap: 0.75em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 
-        .btn {
-            width: 100%;
-        }
+      .btn {
+        width: 100%;
+      }
     }
-
-
 
     //form sizes
     &.form-md {
-        max-width: var(--form-md);
-        padding: 2em;
+      width: var(--form-md);
+      padding: 2em;
     }
-
-
+    &.form-lg {
+      width: var(--form-lg);
+      padding: 2em;
+    }
+  }
+  a {
+    width: 100%;
+  }
 }

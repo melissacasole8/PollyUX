@@ -12,6 +12,7 @@
 
 // setupCounter(document.querySelector("#counter"));
 
+// nav functionality
 $(document).ready(function () {
   var anchor = $("nav .anchor");
   $(anchor).click(function () {
