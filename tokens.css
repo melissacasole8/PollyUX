@@ -2,6 +2,16 @@
 
 :root {
   /* Color styles */
+  --transparency--95: rgba(255, 255, 255, 0.95);
+  --transparency--90: rgba(255, 255, 255, 0.9);
+  --transparency--80: rgba(255, 255, 255, 0.8);
+  --transparency--70: rgba(255, 255, 255, 0.7);
+  --transparency--60: rgba(254, 254, 254, 0.6);
+  --transparency--50: rgba(254, 254, 254, 0.5);
+  --transparency--40: rgba(253, 253, 253, 0.4);
+  --transparency--30: rgba(251, 251, 251, 0.3);
+  --transparency--20: rgba(250, 250, 250, 0.2);
+  --transparency--10: rgba(250, 250, 250, 0.1);
   --white--100: rgba(255, 255, 255, 1);
   --white--200: rgba(254, 254, 254, 1);
   --white--300: rgba(253, 253, 253, 1);
@@ -148,15 +158,13 @@
   --elevation--small: 0px 0px 1px rgba(0, 0, 0, 0.04),
     0px 0px 2px rgba(0, 0, 0, 0.06), 0px 4px 8px rgba(0, 0, 0, 0.04);
 
+  /*Elevation Inputs*/
+  --input--box-shadow: 0 0 0px 1px var(--primary--900);
 
- /*Elevation Inputs*/
- --input--box-shadow:0 0 0px 1px var(--primary--900);
-
-/*Elevation Buttons during focus*/
---elevation--primary: 0 10px 19px 0px hsl(207deg 83% 53% / 50%);
+  /*Elevation Buttons during focus*/
+  --elevation--primary: 0 10px 19px 0px hsl(207deg 83% 53% / 50%);
 
   /* SEMANTIC TOKENS */
-
 
   /*Form Sizes*/
   --form-lg: 800px;

@@ -33,10 +33,9 @@
       align-items: center;
       display: flex;
       justify-content: center;
-      margin-bottom: 2em;
 
       img {
-        width: 200px;
+        width: 250px;
       }
     }
 
@@ -75,7 +74,9 @@
         width: 100%;
       }
     }
-
+    a {
+      width: 100%;
+    }
     //form sizes
     &.form-md {
       width: var(--form-md);
@@ -85,8 +86,5 @@
       width: var(--form-lg);
       padding: 2em;
     }
-  }
-  a {
-    width: 100%;
   }
 }
