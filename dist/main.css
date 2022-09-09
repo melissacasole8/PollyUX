@@ -1,7 +1,4 @@
-//custom style tokens
 @import "tokens.css";
-
-// custom components
 @import "components/nav/nav.css";
 @import "components/card/card.css";
 @import "components/input_group/input-group.css";
@@ -11,11 +8,6 @@
 @import "components/header/header.css";
 @import "components/table/table.css";
 @import "components/badge/badge.css";
-
-// this is importing bootstrap - but the styles override the custom styles
-// need to figure out how to have boostrap load first
-// @import "./node_modules/bootstrap/scss/bootstrap.scss";
-
 /* Custom Resets found on https://piccalil.li/blog/a-modern-css-reset/ */
 /* Box sizing rules */
 *,
@@ -31,7 +23,6 @@
   color: var(--black--700);
 }
 
-//remove default styling from H tags
 h1,
 h2,
 h3,
@@ -48,14 +39,14 @@ a {
   transition: color 0.4s ease;
   text-decoration: none;
   color: var(--primary--900);
-  &:hover {
-    color: var(--primary--700);
-  }
+}
+a:hover {
+  color: var(--primary--700);
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"],
+ul[role=list],
+ol[role=list],
 li,
 ul {
   list-style: none;
@@ -72,6 +63,7 @@ html:focus-within {
 .h-100 {
   padding: 0;
 }
+
 .grid-center {
   display: grid;
   place-content: center;
@@ -86,7 +78,7 @@ body {
   height: 100vh;
   text-rendering: optimizeSpeed;
   font-family: "Roboto", sans-serif;
-  background-color: hsl(0, 0%, 96%);
+  background-color: whitesmoke;
 }
 
 /* A elements that don't have a class get default styles */
@@ -116,32 +108,29 @@ select {
   }
 
   *,
-  *::before,
-  *::after {
+*::before,
+*::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
-
-// styles for login/index
-
 .login-container {
   background: url("img/login-bg.jpg") no-repeat;
   background-size: cover;
   background-blend-mode: difference;
-  &::after {
-    content: "";
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.5);
-  }
+}
+.login-container::after {
+  content: "";
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .quote {
@@ -150,39 +139,35 @@ select {
   z-index: 9999;
   left: 10%;
   top: 30%;
-
-  .txt {
-    align-items: baseline;
-    display: flex;
-    flex-direction: column;
-
-    .sig {
-      width: 100%;
-      p {
-        color: var(--white--100);
-        text-align: right;
-        margin-top: 1em;
-      }
-    }
-  }
-
-  .inline {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 2em;
-    img {
-      border-radius: 99em;
-      width: 8em;
-      aspect-ratio: 1;
-      object-fit: cover;
-      margin-right: 1em;
-      border: 4px solid var(--primary--900);
-      box-shadow: 0 0 40px 4px var(--primary--900);
-    }
-  }
-
-  h1 {
-    color: var(--white--300);
-  }
+}
+.quote .txt {
+  align-items: baseline;
+  display: flex;
+  flex-direction: column;
+}
+.quote .txt .sig {
+  width: 100%;
+}
+.quote .txt .sig p {
+  color: var(--white--100);
+  text-align: right;
+  margin-top: 1em;
+}
+.quote .inline {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2em;
+}
+.quote .inline img {
+  border-radius: 99em;
+  width: 8em;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin-right: 1em;
+  border: 4px solid var(--primary--900);
+  box-shadow: 0 0 40px 4px var(--primary--900);
+}
+.quote h1 {
+  color: var(--white--300);
 }
