@@ -1,0 +1,27 @@
+.badge {
+  font-weight: 500;
+  &.badge-lg {
+    padding: 1em 2em;
+    font-size: var(--roboto--12px--medium);
+  }
+
+  &.badge-sm {
+    padding: 0.5em 1em;
+    font-size: var(--roboto-10px--medium);
+  }
+
+  &.badge-primary {
+    background-color: var(--primary--300);
+    color: var(--primary--900);
+  }
+
+  &.badge-secondary {
+    background-color: var(--caution--200);
+    color: var(--caution--500);
+  }
+
+  &.badge-success {
+    background-color: var(--success--200);
+    color: var(--success--500);
+  }
+}

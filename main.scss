@@ -10,6 +10,7 @@
 @import "components/search/search.css";
 @import "components/header/header.css";
 @import "components/table/table.css";
+@import "components/badge/badge.css";
 
 // this is importing bootstrap - but the styles override the custom styles
 // need to figure out how to have boostrap load first
@@ -153,10 +154,15 @@ select {
   .txt {
     align-items: baseline;
     display: flex;
-    p {
-      color: var(--white--100);
-      text-align: right;
-      margin-top: 1em;
+    flex-direction: column;
+
+    .sig {
+      width: 100%;
+      p {
+        color: var(--white--100);
+        text-align: right;
+        margin-top: 1em;
+      }
     }
   }
 

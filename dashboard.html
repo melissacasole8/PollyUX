@@ -1,133 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image" href="img/logo_closed.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <script
-      src="https://kit.fontawesome.com/31f2e82c1d.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <script src="https://kit.fontawesome.com/31f2e82c1d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet" />
     <!-- CSS only -->
-    
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-  <link rel="stylesheet" href="main.css" />
-  
-  </head>
 
-  <body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="main.css" />
+
+</head>
+
+<body>
     <div class="flex-container">
-      <nav role="navigation" aria-expanded="true">
-        <div class="anchor"><i class="fa fa-arrow-left"></i></div>
-        <header>
-          <a href="/index.html"> <img src="img/logo.svg" alt="polly logo" /></a>
-          <img src="img/logo_closed.png" class="closed-icon" alt="polly logo" />
-        </header>
-        <div class="section-title">
-          Components<span class="closed-icon">C</span>
-        </div>
-        <ul>
-          <li class="list-item">
-            <i class="fa-brands fa-codepen"></i>Link Item<i
-              class="fa-brands fa-codepen closed-icon"
-            ></i>
-          </li>
-          <li class="list-item">
-            <i class="fa-brands fa-codepen"></i>Link Item<i
-              class="fa-brands fa-codepen closed-icon"
-            ></i>
-          </li>
-          <li class="list-item">
-            <i class="fa-brands fa-codepen"></i>Link Item<i
-              class="fa-brands fa-codepen closed-icon"
-            ></i>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="container-fluid">
-          <div class="header">
-           <div class="search">
-             <div class="input-wrap">
-              <div class="input-group">
-                <i class="fas fa-search"></i>
-                <input
-                  class="form-control"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-              </div>
+        <nav role="navigation" aria-expanded="true">
+            <div class="anchor"><i class="fa fa-arrow-left"></i></div>
+            <header>
+                <a href="/index.html"> <img src="img/logo.svg" alt="polly logo" /></a>
+                <img src="img/logo_closed.png" class="closed-icon" alt="polly logo" />
+            </header>
+            <div class="section-title">
+                Components<span class="closed-icon">C</span>
             </div>
-           </div>
-                <button class="btn btn-white">
-              <i class="fas fa-pause"></i>Suspend Pricing
-            </button>
-            <button class="btn btn-primary">
-              <i class="fas fa-plus"></i>New Version
-            </button>
-             </div>
-         <table class="table table-fluid">
-      <thead>
-        <tr>
-          <th scope="col"> <input type="checkbox" aria-label="Checkbox for following text input"></th>
-          <th scope="col">First<i class="fas fa-caret-down"></i></th>
-          <th scope="col">Last<i class="fas fa-caret-down"></i></th>
-          <th scope="col">Handle<i class="fas fa-caret-down"></i></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-title="&nbsp;" scope="row"> <input type="checkbox" aria-label="Checkbox for following text input"></td>
-          <td data-title="First">Mark</td>
-          <td data-title="Last">Otto</td>
-          <td data-title="Handle">@mdo</td>
-        </tr>
-        <tr>
-          <td data-title="&nbsp;" scope="row"> <input type="checkbox" aria-label="Checkbox for following text input"></td>
-          <td data-title="First">Jacob</td>
-          <td data-title="Last">Thornton</td>
-          <td data-title="Handle">@fat</td>
-        </tr>
-        <tr>
-          <td data-title="&nbsp;" scope="row"> <input type="checkbox" aria-label="Checkbox for following text input"></td>
-          <td data-title="First">Larry</td>
-          <td data-title="Last">the Bird</td>
-          <td data-title="Handle">@twitter</td>
-        </tr>
-      </tbody>
-    </table>
-       
+            <ul>
+                <li class="list-item">
+                    <i class="fa-brands fa-codepen"></i>Link Item<i class="fa-brands fa-codepen closed-icon"></i>
+                </li>
+                <li class="list-item">
+                    <i class="fa-brands fa-codepen"></i>Link Item<i class="fa-brands fa-codepen closed-icon"></i>
+                </li>
+                <li class="list-item">
+                    <i class="fa-brands fa-codepen"></i>Link Item<i class="fa-brands fa-codepen closed-icon"></i>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="header">
+                <div class="search">
+                    <div class="input-wrap">
+                        <div class="input-group">
+                            <i class="fas fa-search"></i>
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-white  btn-lg">
+                    <i class="fas fa-pause"></i>Suspend Pricing
+                </button>
+                <button class="btn btn-primary btn-lg">
+                    <i class="fas fa-plus"></i>New Version
+                </button>
+            </div>
+            <div class="table-container">
+                <table class="table table-fluid">
+                    <div class="table-header">
+                        <h1>Working Sessions</h1>
+                    </div>
+                    <thead>
+                        <tr>
+                            <th scope="col"> <input type="checkbox" aria-label="Checkbox for following text input"></th>
+                            <th scope="col">Name<i class="fas fa-arrow-down"></i></th>
+                            <th scope="col">Added<i class="fas fa-arrow-down"></i></th>
+                            <th scope="col">Modified<i class="fas fa-arrow-down"></i></th>
+                            <th scope="col">Removed<i class="fas fa-arrow-down"></i></th>
+                            <th scope="col">Generated<i class="fas fa-arrow-down"></i></th>
+                            <th scope="col">Status<i class="fas fa-arrow-down"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="sec" colspan="7">Wednesday, June 15</td>
+                        </tr>
+                        <tr>
+                            <td data-title="&nbsp;" scope="row"> <input type="checkbox"
+                                    aria-label="Checkbox for following text input"></td>
+                            <td class="link" data-title="Name"><a href="#">Tuesday Pre Day</a></td>
+                            <td data-title="Added">3</td>
+                            <td data-title="Modified">1</td>
+                            <td data-title="Removed">0</td>
+                            <td data-title="Generated">-</td>
+                            <td data-title="Status">
+                                <span class="badge badge-secondary">Draft</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sec" colspan="7">Friday, May 13</td>
+                        </tr>
+                        <tr>
+                            <td data-title="&nbsp;" scope="row"> <input type="checkbox"
+                                    aria-label="Checkbox for following text input"></td>
+                            <td class="link" data-title="Name"><a href="#">03252020 PM</a></td>
+                            <td data-title="Added">3</td>
+                            <td data-title="Modified">1</td>
+                            <td data-title="Removed">0</td>
+                            <td data-title="Generated">05/13/22 9:04 AM</td>
+                            <td data-title="Status">
+                                <span class="badge badge-success">Active</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <!--table 2-->
+
+            <div class="table-container">
+                <table class="table table-fluid">
+                    <div class="table-header">
+                        <h1>Version History</h1>
+                    </div>
+                    <thead>
+                        <tr>
+                            <th scope="col"> <input type="checkbox" aria-label="Checkbox for following text input"></th>
+                            <th scope="col">Date<i class="fas fa-arrow-down"></i></th>
+                            <th scope="col">Name<i class="fas fa-arrow-down"></i></th>
+                            <th scope="col">Added<i class="fas fa-arrow-down"></i></th>
+                            <th scope="col">Modified<i class="fas fa-arrow-down"></i></th>
+                            <th scope="col">Removed<i class="fas fa-arrow-down"></i></th>
+                            <th scope="col">Generated<i class="fas fa-arrow-down"></i></th>
+                            <th scope="col">Status<i class="fas fa-arrow-down"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-title="&nbsp;" scope="row"> <input type="checkbox"
+                                    aria-label="Checkbox for following text input"></td>
+                            <td class="sec" data-title="Date">Wednesday, June 15</td>
+                            <td class="link" data-title="Name"><a href="#">Tuesday Pre Day</a></td>
+                            <td data-title="Added">3</td>
+                            <td data-title="Modified">1</td>
+                            <td data-title="Removed">0</td>
+                            <td data-title="Generated">-</td>
+                            <td data-title="Status">
+                                <span class="badge badge-secondary">Draft</span>
+                            </td>
+                        </tr>
+                           <tr>
+                            <td  data-title="&nbsp;" scope="row"> <input type="checkbox"
+                                    aria-label="Checkbox for following text input"></td>
+                            <td class="sec" data-title="Date">Friday, May 13</td>
+                            <td class="link" data-title="Name"><a href="#">Tuesday Pre Day</a></td>
+                            <td data-title="Added">3</td>
+                            <td data-title="Modified">1</td>
+                            <td data-title="Removed">0</td>
+                            <td data-title="Generated">-</td>
+                            <td data-title="Status">
+                                <span class="badge badge-secondary">Draft</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-      </div>
     </div>
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
-      crossorigin="anonymous"
-    ></script>
+    </div>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous">
+    </script>
     <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script type="module" src="main.js"></script>
-  </body>
+</body>
+
 </html>
