@@ -13,34 +13,20 @@
 // custom styles here
 
 .input-wrap {
-  margin: 0.675em 0;
   width: 100%;
 
   label {
-    display: none;
+    // display: none;
     padding-left: 1em;
     color: var(--black--600);
     font-size: var(--roboto--12px--regular);
   }
 
   .input-group {
+    margin: 1.5em 0;
     align-items: center;
     justify-content: center;
     position: relative;
-
-    .focus-label {
-      transition: all 0.3s ease-in;
-      color: var(--black--500);
-      position: absolute;
-      opacity: 0;
-      top: 0px;
-      left: 20px;
-      font-size: var(--roboto--12px--regular);
-      &.focus {
-        top: -20px;
-        opacity: 1;
-      }
-    }
 
     i,
     svg {
@@ -61,11 +47,38 @@
       background-color: var(--white--100);
       border-radius: 8px;
       border-color: var(--white--600);
+
+      &.w-icon {
+        ~ label {
+          transform: translateX(1.5em);
+        }
+      }
       &:focus {
         box-shadow: var(--input--box-shadow);
+        ~ label {
+          font-size: var(--roboto--12px--regular);
+          opacity: 1;
+          transform: translateY(-2.4em);
+        }
       }
+
       &::placeholder {
         color: var(--black--500);
+      }
+
+      ~ label {
+        transition: all 0.4s ease;
+        opacity: 1;
+        position: absolute;
+        left: 0;
+        top: 9px;
+        font-size: var(--roboto--14px--regular);
+        opacity: 0.5;
+        &.freeze {
+          font-size: var(--roboto--12px--regular);
+          opacity: 1;
+          transform: translateY(-2.4em);
+        }
       }
     }
   }

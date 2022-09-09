@@ -20,16 +20,26 @@ $(document).ready(function () {
     } else {
       $(nav).attr("aria-expanded", true).removeClass("closed");
     }
-  });
-}); // input on focus/filled add class to label
+  }); // input on focus/filled add class to label
 
-$(document).ready(function () {
-  var formControl = $("input");
-  $(formControl).focus(function () {
-    if ($(this).val() == 0) {
-      $(this).find("span").addClass("focus");
-    } else {
-      $(this).removeClass("focus");
+  var inputGroup = $(".input-group");
+  inputGroup.each(function () {
+    var field = $(this);
+    var input = field.find("input");
+    var label = field.find("label");
+
+    function checkInput() {
+      var valueLength = input.val().length;
+
+      if (valueLength > 0) {
+        label.addClass("freeze");
+      } else {
+        label.removeClass("freeze");
+      }
     }
+
+    input.change(function () {
+      checkInput();
+    });
   });
 });
