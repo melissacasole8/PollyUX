@@ -21,3 +21,7 @@
   background-color: var(--success--200);
   color: var(--success--500);
 }
+.badge.badge-inactive {
+  background-color: var(--black--200);
+  color: var(--black--700);
+}
