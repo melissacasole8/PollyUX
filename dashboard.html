@@ -14,14 +14,15 @@
       rel="stylesheet"
     />
     <!-- CSS only -->
+    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-
-    <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="main.css" />
+  
   </head>
 
   <body>
@@ -55,9 +56,9 @@
       </nav>
 
       <div class="container-fluid">
-        <div class="topBar">
           <div class="header">
-            <div class="search">
+           <div class="search">
+             <div class="input-wrap">
               <div class="input-group">
                 <i class="fas fa-search"></i>
                 <input
@@ -68,13 +69,45 @@
                 />
               </div>
             </div>
-            <button class="btn btn-white">
+           </div>
+                <button class="btn btn-white">
               <i class="fas fa-pause"></i>Suspend Pricing
             </button>
             <button class="btn btn-primary">
               <i class="fas fa-plus"></i>New Version
             </button>
-          </div>
+             </div>
+         <table class="table table-fluid">
+      <thead>
+        <tr>
+          <th scope="col"> <input type="checkbox" aria-label="Checkbox for following text input"></th>
+          <th scope="col">First<i class="fas fa-caret-down"></i></th>
+          <th scope="col">Last<i class="fas fa-caret-down"></i></th>
+          <th scope="col">Handle<i class="fas fa-caret-down"></i></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-title="&nbsp;" scope="row"> <input type="checkbox" aria-label="Checkbox for following text input"></td>
+          <td data-title="First">Mark</td>
+          <td data-title="Last">Otto</td>
+          <td data-title="Handle">@mdo</td>
+        </tr>
+        <tr>
+          <td data-title="&nbsp;" scope="row"> <input type="checkbox" aria-label="Checkbox for following text input"></td>
+          <td data-title="First">Jacob</td>
+          <td data-title="Last">Thornton</td>
+          <td data-title="Handle">@fat</td>
+        </tr>
+        <tr>
+          <td data-title="&nbsp;" scope="row"> <input type="checkbox" aria-label="Checkbox for following text input"></td>
+          <td data-title="First">Larry</td>
+          <td data-title="Last">the Bird</td>
+          <td data-title="Handle">@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+       
         </div>
       </div>
     </div>

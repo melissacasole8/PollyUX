@@ -8,12 +8,13 @@
 }
 
 .input-group input [type="search"] {
-  border-radius: 99em;
+  border-radius: 8em;
 }
 // custom styles here
 
 .input-wrap {
   margin: 0.675em 0;
+  width: 100%;
 
   label {
     display: none;

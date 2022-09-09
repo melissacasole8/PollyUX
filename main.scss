@@ -9,6 +9,7 @@
 @import "components/button/button.css";
 @import "components/search/search.css";
 @import "components/header/header.css";
+@import "components/table/table.css";
 
 // this is importing bootstrap - but the styles override the custom styles
 // need to figure out how to have boostrap load first
@@ -125,6 +126,23 @@ select {
 
 // styles for login/index
 
+.login-container {
+  background: url("/img/login-bg.jpg") no-repeat;
+  background-size: cover;
+  background-blend-mode: difference;
+  &::after {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
 .quote {
   max-width: 50%;
   position: absolute;
@@ -133,6 +151,8 @@ select {
   top: 30%;
 
   .txt {
+    align-items: baseline;
+    display: flex;
     p {
       color: var(--white--100);
       text-align: right;
@@ -147,11 +167,12 @@ select {
     gap: 2em;
     img {
       border-radius: 99em;
-      width: 12em;
+      width: 8em;
       aspect-ratio: 1;
       object-fit: cover;
       margin-right: 1em;
-      border: 10px solid var(--primary--900);
+      border: 4px solid var(--primary--900);
+      box-shadow: 0 0 40px 4px var(--primary--900);
     }
   }
 

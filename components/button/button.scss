@@ -2,6 +2,7 @@
   border-radius: 99em;
   outline: none;
   white-space: nowrap;
+  font-size: var(--roboto--14px--medium);
   i,
   svg {
     margin: 0 0.5em;
@@ -10,7 +11,7 @@
 
 .btn-white {
   background: var(--white--100);
-  border: 1px solid var(--white--900);
+  border: 1px solid var(--black--300);
   &:hover {
     border-color: var(--black--300);
   }

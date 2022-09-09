@@ -1,1 +1,1 @@
-.header{display:flex;justify-content:space-between;align-items:end;gap:1em;margin:1em 0}
+.header{display:flex;justify-content:end;align-items:baseline;gap:1em;margin:1em 0;width:100%}
