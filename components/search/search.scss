@@ -4,6 +4,8 @@
     .input-group {
       i,
       svg {
+        right: 1em;
+        left: auto;
         position: absolute;
         path {
           color: var(--black--300);

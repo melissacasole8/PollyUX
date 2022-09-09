@@ -28,6 +28,20 @@
     justify-content: center;
     position: relative;
 
+    .focus-label {
+      transition: all 0.3s ease-in;
+      color: var(--black--500);
+      position: absolute;
+      opacity: 0;
+      top: 0px;
+      left: 20px;
+      font-size: var(--roboto--12px--regular);
+      &.focus {
+        top: -20px;
+        opacity: 1;
+      }
+    }
+
     i,
     svg {
       z-index: 4;
@@ -44,8 +58,9 @@
     }
 
     .form-control {
+      background-color: var(--white--100);
       border-radius: 8px;
-      border-color: var(--black--200);
+      border-color: var(--white--600);
       &:focus {
         box-shadow: var(--input--box-shadow);
       }
