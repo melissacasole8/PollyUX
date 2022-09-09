@@ -7,55 +7,70 @@
     <title>Table</title>
   </head>
   <body>
-    <table class="table table-fluid">
-      <thead>
-        <tr>
-          <th scope="col">
-            <input
-              type="checkbox"
-              aria-label="Checkbox for following text input"
-            />
-          </th>
-          <th scope="col">First<i class="fas fa-caret-down"></i></th>
-          <th scope="col">Last<i class="fas fa-caret-down"></i></th>
-          <th scope="col">Handle<i class="fas fa-caret-down"></i></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-title="&nbsp;" scope="row">
-            <input
-              type="checkbox"
-              aria-label="Checkbox for following text input"
-            />
-          </td>
-          <td data-title="First">Mark</td>
-          <td data-title="Last">Otto</td>
-          <td data-title="Handle">@mdo</td>
-        </tr>
-        <tr>
-          <td data-title="&nbsp;" scope="row">
-            <input
-              type="checkbox"
-              aria-label="Checkbox for following text input"
-            />
-          </td>
-          <td data-title="First">Jacob</td>
-          <td data-title="Last">Thornton</td>
-          <td data-title="Handle">@fat</td>
-        </tr>
-        <tr>
-          <td data-title="&nbsp;" scope="row">
-            <input
-              type="checkbox"
-              aria-label="Checkbox for following text input"
-            />
-          </td>
-          <td data-title="First">Larry</td>
-          <td data-title="Last">the Bird</td>
-          <td data-title="Handle">@twitter</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-container">
+      <table class="table table-fluid">
+        <div class="table-header">
+          <h1>Working Sessions</h1>
+        </div>
+        <thead>
+          <tr>
+            <th scope="col">
+              <input
+                type="checkbox"
+                aria-label="Checkbox for following text input"
+              />
+            </th>
+            <th scope="col">Name<i class="fas fa-arrow-down"></i></th>
+            <th scope="col">Added<i class="fas fa-arrow-down"></i></th>
+            <th scope="col">Modified<i class="fas fa-arrow-down"></i></th>
+            <th scope="col">Removed<i class="fas fa-arrow-down"></i></th>
+            <th scope="col">Generated<i class="fas fa-arrow-down"></i></th>
+            <th scope="col">Status<i class="fas fa-arrow-down"></i></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sec" colspan="7">Wednesday, June 15</td>
+          </tr>
+          <tr>
+            <td data-title="&nbsp;" scope="row">
+              <input
+                type="checkbox"
+                aria-label="Checkbox for following text input"
+              />
+            </td>
+            <td class="link" data-title="Name">
+              <a href="#">Tuesday Pre Day</a>
+            </td>
+            <td data-title="Added">3</td>
+            <td data-title="Modified">1</td>
+            <td data-title="Removed">0</td>
+            <td data-title="Generated">-</td>
+            <td data-title="Status">
+              <span class="badge badge-secondary">Draft</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="sec" colspan="7">Friday, May 13</td>
+          </tr>
+          <tr>
+            <td data-title="&nbsp;" scope="row">
+              <input
+                type="checkbox"
+                aria-label="Checkbox for following text input"
+              />
+            </td>
+            <td class="link" data-title="Name"><a href="#">03252020 PM</a></td>
+            <td data-title="Added">3</td>
+            <td data-title="Modified">1</td>
+            <td data-title="Removed">0</td>
+            <td data-title="Generated">05/13/22 9:04 AM</td>
+            <td data-title="Status">
+              <span class="badge badge-success">Active</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>

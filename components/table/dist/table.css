@@ -33,6 +33,11 @@
 .table-container table tr td.link {
   font-weight: 500;
 }
+.table-container table tr td .btn {
+  padding: 0;
+  width: 28px;
+  aspect-ratio: 1;
+}
 .table-container table thead tr {
   background-color: var(--white--400);
 }

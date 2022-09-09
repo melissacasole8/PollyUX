@@ -23,7 +23,8 @@
             <div class="anchor"><i class="fa fa-arrow-left"></i></div>
             <header>
                 <a href="../index.html"> <img src="../img/logo.svg" alt="polly logo" /></a>
-              <a href="../index.html"></a>  <img src="../img/logo_closed.png" class="closed-icon" alt="polly logo" /></a>
+                <a href="../index.html"></a> <img src="../img/logo_closed.png" class="closed-icon"
+                    alt="polly logo" /></a>
             </header>
             <div class="section-title">
                 Components<span class="closed-icon">C</span>
@@ -46,17 +47,16 @@
                 <div class="search">
                     <div class="input-wrap">
                         <div class="input-group">
-                            <input id="search" class="form-control" type="text" 
-                                aria-label="Search" />
-                                <label for="search">Search</label>
+                            <input id="search" class="form-control" type="text" aria-label="Search" />
+                            <label for="search">Search</label>
                             <i class="fas fa-search"></i>
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-white  btn-lg">
+                <button class="btn btn-white  btn-lg icon-left">
                     <i class="fas fa-pause"></i>Suspend Pricing
                 </button>
-                <button class="btn btn-primary btn-lg">
+                <button class="btn btn-primary btn-lg icon-left">
                     <i class="fas fa-plus"></i>New Version
                 </button>
             </div>
@@ -74,6 +74,7 @@
                             <th scope="col">Removed<i class="fas fa-arrow-down"></i></th>
                             <th scope="col">Generated<i class="fas fa-arrow-down"></i></th>
                             <th scope="col">Status<i class="fas fa-arrow-down"></i></th>
+                            <th scope="col">&nbsp;</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -91,6 +92,9 @@
                             <td data-title="Status">
                                 <span class="badge badge-secondary">Draft</span>
                             </td>
+                            <td data-title="&nbsp;"><button class="btn btn-white"><i
+                                        class="fas fa-ellipsis-h"></i></button></td>
+
                         </tr>
                         <tr>
                             <td class="sec" colspan="7">Friday, May 13</td>
@@ -106,6 +110,9 @@
                             <td data-title="Status">
                                 <span class="badge badge-success">Active</span>
                             </td>
+                            <td data-title="&nbsp;"><button class="btn btn-white"><i
+                                        class="fas fa-ellipsis-h"></i></button></td>
+
                         </tr>
                     </tbody>
                 </table>
@@ -129,10 +136,12 @@
                             <th scope="col">Removed<i class="fas fa-arrow-down"></i></th>
                             <th scope="col">Generated<i class="fas fa-arrow-down"></i></th>
                             <th scope="col">Status<i class="fas fa-arrow-down"></i></th>
+                            <th scope="col">&nbsp;</th>
+
                         </tr>
                     </thead>
                     <tbody>
-                    <tr>
+                        <tr>
                             <td data-title="&nbsp;" scope="row"> <input type="checkbox"
                                     aria-label="Checkbox for following text input"></td>
                             <td class="sec" data-title="Date">Friday, May x</td>
@@ -144,8 +153,11 @@
                             <td data-title="Status">
                                 <span class="badge badge-inactive">Unpulished</span>
                             </td>
+                            <td data-title="&nbsp;"><button class="btn btn-white"><i
+                                        class="fas fa-ellipsis-h"></i></button></td>
+
                         </tr>
-                      <tr>
+                        <tr>
                             <td data-title="&nbsp;" scope="row"> <input type="checkbox"
                                     aria-label="Checkbox for following text input"></td>
                             <td class="sec" data-title="Date">Friday, May x</td>
@@ -157,6 +169,8 @@
                             <td data-title="Status">
                                 <span class="badge badge-inactive">Unpulished</span>
                             </td>
+                            <td data-title="&nbsp;"><button class="btn btn-white"><i
+                                        class="fas fa-ellipsis-h"></i></button></td>
                         </tr>
                     </tbody>
                 </table>

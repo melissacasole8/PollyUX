@@ -10,6 +10,10 @@
 }
 .btn i,
 .btn svg {
+  margin: 0;
+}
+.btn.icon-left i,
+.btn.icon-left svg {
   margin: 0 0.6em 0 0;
 }
 
