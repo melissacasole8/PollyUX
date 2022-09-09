@@ -39,9 +39,22 @@
 .table-container table thead tr th {
   font-size: var(--roboto--14px--bold);
 }
+.table-container table thead tr th i,
+.table-container table thead tr th svg {
+  cursor: pointer;
+}
 .table-container table thead tr th i path,
 .table-container table thead tr th svg path {
+  transition: all 0.4s ease;
   color: var(--black--500);
+}
+.table-container table thead tr th i path:hover,
+.table-container table thead tr th svg path:hover {
+  color: var(--primary--900);
+}
+.table-container table thead tr th i:hover,
+.table-container table thead tr th svg:hover {
+  color: var(--black--200);
 }
 .table-container table thead tr th:first-of-type {
   border-top-left-radius: 10px;

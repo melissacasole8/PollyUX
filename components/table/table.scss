@@ -47,8 +47,16 @@
 
           i,
           svg {
+            cursor: pointer;
             path {
+              transition: all 0.4s ease;
               color: var(--black--500);
+              &:hover {
+                color: var(--primary--900);
+              }
+            }
+            &:hover {
+              color: var(--black--200);
             }
           }
 
