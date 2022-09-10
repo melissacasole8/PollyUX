@@ -3,12 +3,13 @@
   justify-content: end;
 }
 .form-container form {
+  width: min(400px, 600px);
+  height: 100vh;
   background: var(--white--100);
   color: var(--primary--900);
   padding: 1.5em;
   border: none;
   box-shadow: var(--elevation);
-  width: 100%;
   z-index: 2;
   display: flex;
   flex-direction: column;
