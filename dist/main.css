@@ -205,11 +205,7 @@ select {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 0.7em;
-  flex-grow: 0;
-}
-.tiles .card {
-  width: auto;
-  height: auto;
+  flex: 1;
 }
 
 @media screen and (max-width: 1200px) {
