@@ -4,11 +4,33 @@
   width: 60px;
   height: 34px;
 
+  &.switch-sm {
+    width: 40px;
+    height: 24px;
+    .slider {
+      &::before {
+        height: 16px;
+        width: 16px;
+      }
+    }
+    input {
+      display: none;
+      &:checked {
+        + .slider {
+          background-color: var(--success--500);
+          &::before {
+            transform: translateX(16px);
+          }
+        }
+      }
+    }
+  }
+
   input {
     display: none;
     &:checked {
       + .slider {
-        background-color: green;
+        background-color: var(--success--500);
         &::before {
           transform: translateX(26px);
         }
@@ -17,7 +39,7 @@
   }
   .slider {
     border-radius: 34px;
-    background-color: #ccc;
+    background-color: var(--white--700);
     bottom: 0;
     left: 0;
     cursor: pointer;

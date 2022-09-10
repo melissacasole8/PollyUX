@@ -4,18 +4,35 @@
   width: 60px;
   height: 34px;
 }
+.switch.switch-sm {
+  width: 40px;
+  height: 24px;
+}
+.switch.switch-sm .slider::before {
+  height: 16px;
+  width: 16px;
+}
+.switch.switch-sm input {
+  display: none;
+}
+.switch.switch-sm input:checked + .slider {
+  background-color: var(--success--500);
+}
+.switch.switch-sm input:checked + .slider::before {
+  transform: translateX(16px);
+}
 .switch input {
   display: none;
 }
 .switch input:checked + .slider {
-  background-color: green;
+  background-color: var(--success--500);
 }
 .switch input:checked + .slider::before {
   transform: translateX(26px);
 }
 .switch .slider {
   border-radius: 34px;
-  background-color: #ccc;
+  background-color: var(--white--700);
   bottom: 0;
   left: 0;
   cursor: pointer;
