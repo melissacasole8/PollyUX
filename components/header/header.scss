@@ -36,9 +36,17 @@
 
 @media screen and (max-width: 710px) {
   .header {
-    div,
-    button {
-      width: 100% !important;
+    .end {
+      width: 100%;
+    }
+    .search {
+      display: none;
+    }
+    .actions {
+      width: 100%;
+      button {
+        width: 100% !important;
+      }
     }
   }
 }

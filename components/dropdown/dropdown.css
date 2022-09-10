@@ -1,1 +1,1 @@
-.dropdown-menu{box-shadow:var(--elevation-md)}.dropdown-menu .dropdown-item{font-size:var(--roboto--12px)}
+.dropdown-menu{box-shadow:var(--elevation--md);border:1px solid var(--black--200);border-radius:8px;transform:translate(0, 32px)}.dropdown-menu .dropdown-item{font-size:var(--roboto--12px)}

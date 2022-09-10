@@ -3,9 +3,10 @@
   border-radius: 10px;
   color: var(--primary--900);
   padding: 1.5em;
-  border: none;
-  box-shadow: var(--elevation);
-  margin: 1em;
+  border: 1px solid var(--black--200);
+  box-shadow: var(--elevation--md);
+  margin: 0.7em 0;
+  min-width: 400px;
 
   .card-title {
     h1 {
@@ -14,8 +15,10 @@
       color: var(--primary--900);
     }
     .subtitle {
-      margin-top: 0.4em;
+      margin-top: 0.6em;
+      color: var(--black--900);
       span {
+        color: var(--black--600);
         font-weight: 500;
         margin-right: 0.4em;
       }
@@ -24,13 +27,25 @@
   }
 
   .item {
-    margin: 1em 0;
+    border-radius: 8px;
+    padding: 0.5em;
+    transition: all 0.4s ease;
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    .key {
+      width: 200px;
+    }
+
     .key,
     p {
       font-size: var(--roboto--14px);
     }
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+      background: var(--white--600);
+    }
   }
 }

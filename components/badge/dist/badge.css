@@ -21,7 +21,11 @@
   background-color: var(--success--200);
   color: var(--success--500);
 }
+.badge.badge-error {
+  background-color: var(--error--200);
+  color: var(--error--700);
+}
 .badge.badge-inactive {
   background-color: var(--black--200);
-  color: var(--black--400);
+  color: var(--black--500);
 }

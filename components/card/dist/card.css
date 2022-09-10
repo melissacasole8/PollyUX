@@ -3,9 +3,10 @@
   border-radius: 10px;
   color: var(--primary--900);
   padding: 1.5em;
-  border: none;
-  box-shadow: var(--elevation);
-  margin: 1em;
+  border: 1px solid var(--black--200);
+  box-shadow: var(--elevation--md);
+  margin: 0.7em 0;
+  min-width: 400px;
 }
 .card .card-title h1 {
   font-size: var(--roboto--20px);
@@ -13,20 +14,32 @@
   color: var(--primary--900);
 }
 .card .card-title .subtitle {
-  margin-top: 0.4em;
+  margin-top: 0.6em;
+  color: var(--black--900);
   font-weight: 400;
 }
 .card .card-title .subtitle span {
+  color: var(--black--600);
   font-weight: 500;
   margin-right: 0.4em;
 }
 .card .item {
-  margin: 1em 0;
+  border-radius: 8px;
+  padding: 0.5em;
+  transition: all 0.4s ease;
+  margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
+}
+.card .item .key {
+  width: 200px;
 }
 .card .item .key,
 .card .item p {
   font-size: var(--roboto--14px);
+}
+.card .item:hover {
+  cursor: pointer;
+  background: var(--white--600);
 }

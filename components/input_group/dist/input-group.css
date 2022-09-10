@@ -78,3 +78,15 @@ label {
   cursor: pointer;
   background-color: var(--white--400);
 }
+
+textarea {
+  border-radius: 8px;
+  border-color: var(--black--300);
+  padding: 0.2em 0.5em;
+  font-size: var(--roboto--14px) !important;
+}
+textarea:focus {
+  outline: none;
+  border: 1px solid var(--primary--900);
+  box-shadow: var(--primary--box-shadow);
+}

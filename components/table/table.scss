@@ -56,6 +56,13 @@
           align-items: center;
           display: flex;
         }
+        &[role="button"] {
+          .dropdown-toggle {
+            &::after {
+              content: none;
+            }
+          }
+        }
       }
     }
 
