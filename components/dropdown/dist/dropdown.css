@@ -1,0 +1,6 @@
+.dropdown-menu {
+  box-shadow: var(--elevation-md);
+}
+.dropdown-menu .dropdown-item {
+  font-size: var(--roboto--12px);
+}

@@ -1,5 +1,5 @@
 @import "tokens.css";
-@import "components/layout/layout.css";
+@import "components/container/container.css";
 @import "components/nav/nav.css";
 @import "components/card/card.css";
 @import "components/input_group/input-group.css";
@@ -9,6 +9,8 @@
 @import "components/header/header.css";
 @import "components/table/table.css";
 @import "components/badge/badge.css";
+@import "components/accordion/accordion.css";
+@import "components/dropdown/dropdown.css";
 /* Custom Resets found on https://piccalil.li/blog/a-modern-css-reset/ */
 /* Box sizing rules */
 :root {

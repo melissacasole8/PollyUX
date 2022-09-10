@@ -6,12 +6,15 @@
 }
 
 .table-container {
-  box-shadow: var(--elevation--large);
+  box-shadow: var(--elevation--md);
   border-radius: 10px;
   background-color: var(--white--100);
 
   .table-header {
     padding: 1em 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     h1 {
       color: var(--black--700);

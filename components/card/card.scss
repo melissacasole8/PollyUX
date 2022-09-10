@@ -5,12 +5,21 @@
   padding: 1.5em;
   border: none;
   box-shadow: var(--elevation);
+  margin: 1em;
 
   .card-title {
     h1 {
       font-size: var(--roboto--20px);
       font-weight: 400;
       color: var(--primary--900);
+    }
+    .subtitle {
+      margin-top: 0.4em;
+      span {
+        font-weight: 500;
+        margin-right: 0.4em;
+      }
+      font-weight: 400;
     }
   }
 
