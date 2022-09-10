@@ -1,5 +1,9 @@
 .badge {
   font-weight: 500;
+  margin: 0 0.5em;
+}
+.badge.round {
+  border-radius: 99em;
 }
 .badge.badge-lg {
   padding: 0.5em 1em;
@@ -28,4 +32,9 @@
 .badge.badge-inactive {
   background-color: var(--black--200);
   color: var(--black--500);
+}
+.badge.badge-white {
+  background-color: var(--white--200);
+  border: 1px solid var(--black--300);
+  color: var(--black--900);
 }

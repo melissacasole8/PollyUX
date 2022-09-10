@@ -21,6 +21,9 @@
   font-weight: 400;
   font-size: var(--roboto--20px);
 }
+.table-container .table-header.link h1 {
+  color: var(--primary--900);
+}
 .table-container table tr {
   border: none;
 }

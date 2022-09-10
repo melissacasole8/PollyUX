@@ -48,4 +48,12 @@
       background: var(--white--600);
     }
   }
+  > .table-container {
+    background: none;
+    box-shadow: none;
+
+    .table-header {
+      padding: 0 0 1em 0;
+    }
+  }
 }

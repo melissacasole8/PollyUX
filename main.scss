@@ -14,6 +14,7 @@
 @import "components/badge/badge.css";
 @import "components/accordion/accordion.css";
 @import "components/dropdown/dropdown.css";
+@import "components/switch/switch.css";
 
 // this is importing bootstrap - but the styles override the custom styles
 // need to figure out how to have boostrap load first
@@ -205,6 +206,11 @@ select {
   h1 {
     color: var(--white--300);
   }
+}
+
+// tiles class wraps the tiles on the details pages
+.tiles {
+  gap: 0.7em;
 }
 
 //media queries for login page

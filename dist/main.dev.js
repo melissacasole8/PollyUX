@@ -48,4 +48,16 @@ $(document).ready(function () {
 
 $(".search").click(function () {
   $(this).toggleClass("search-closed");
+}); // pil slider
+
+$(".choice button").click(function () {
+  $(this).closest(".cont").removeClass("left right center");
+
+  if ($(this).hasClass("left")) {
+    $(this).closest(".cont").addClass("left");
+  } else if ($(this).hasClass("center")) {
+    $(this).closest(".cont").addClass("center");
+  } else {
+    $(this).closest(".cont").addClass("right");
+  }
 });

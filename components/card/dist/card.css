@@ -43,3 +43,10 @@
   cursor: pointer;
   background: var(--white--600);
 }
+.card > .table-container {
+  background: none;
+  box-shadow: none;
+}
+.card > .table-container .table-header {
+  padding: 0 0 1em 0;
+}

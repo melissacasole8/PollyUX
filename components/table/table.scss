@@ -21,6 +21,11 @@
       font-weight: 400;
       font-size: var(--roboto--20px);
     }
+    &.link {
+      h1 {
+        color: var(--primary--900);
+      }
+    }
   }
 
   table {

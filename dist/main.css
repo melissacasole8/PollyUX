@@ -11,6 +11,7 @@
 @import "components/badge/badge.css";
 @import "components/accordion/accordion.css";
 @import "components/dropdown/dropdown.css";
+@import "components/switch/switch.css";
 /* Custom Resets found on https://piccalil.li/blog/a-modern-css-reset/ */
 /* Box sizing rules */
 :root {
@@ -187,6 +188,10 @@ select {
 }
 .quote h1 {
   color: var(--white--300);
+}
+
+.tiles {
+  gap: 0.7em;
 }
 
 @media screen and (max-width: 1090px) {

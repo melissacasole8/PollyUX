@@ -26,6 +26,12 @@
   border-color: var(--white--900);
 }
 
+.btn-transparent {
+  background: transparent;
+  border-color: transparent;
+  color: inherit;
+}
+
 .btn-primary {
   background-color: var(--primary--900);
   border: 1px solid var(--primary--900);
