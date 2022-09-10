@@ -211,7 +211,25 @@ select {
 
 // tiles class wraps the tiles on the details pages
 .tiles {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   gap: 0.7em;
+  flex-grow: 0;
+
+  .card {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .tiles {
+    flex-direction: column;
+    .card {
+      width: 100%;
+    }
+  }
 }
 
 //media queries for login page

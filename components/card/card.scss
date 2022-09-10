@@ -5,8 +5,9 @@
   padding: 1.5em;
   border: 1px solid var(--black--200);
   box-shadow: var(--elevation--md);
-  margin: 0.7em 0;
-  min-width: 400px;
+  margin: 0;
+  min-width: 600px;
+  flex: 1;
 
   .card-title {
     h1 {

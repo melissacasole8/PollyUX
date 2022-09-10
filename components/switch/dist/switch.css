@@ -38,7 +38,8 @@
 }
 
 .pill-switch {
-  margin: 0 0 1em 0;
+  width: 600px;
+  margin: 0 auto 1em;
 }
 .pill-switch .cont {
   display: flex;

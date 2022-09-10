@@ -192,9 +192,25 @@ select {
 }
 
 .tiles {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   gap: 0.7em;
+  flex-grow: 0;
+}
+.tiles .card {
+  width: auto;
+  height: auto;
 }
 
+@media screen and (max-width: 1200px) {
+  .tiles {
+    flex-direction: column;
+  }
+  .tiles .card {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1090px) {
   .quote {
     scale: 0.85;
