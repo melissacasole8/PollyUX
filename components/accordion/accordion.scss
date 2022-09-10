@@ -13,6 +13,7 @@
       border: 1px solid var(--black--200);
       border-radius: 8px;
       button {
+        box-shadow: none;
         background-color: var(--white--100);
         display: flex;
         justify-content: space-between;

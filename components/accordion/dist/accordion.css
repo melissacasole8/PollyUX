@@ -16,6 +16,7 @@
   border-radius: 8px;
 }
 .accordion .accordion-item .accordion-header button {
+  box-shadow: none;
   background-color: var(--white--100);
   display: flex;
   justify-content: space-between;

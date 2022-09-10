@@ -25,6 +25,15 @@
   margin: 0;
 }
 
+i,
+svg {
+  transition: all 0.4s ease;
+}
+
+.rotate90 {
+  transform: rotate(90deg);
+}
+
 *,
 *::before,
 *::after {

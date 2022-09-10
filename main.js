@@ -85,3 +85,13 @@ $(window).on("resize", function () {
     $(".polly-container").addClass("nav-open");
   }
 });
+
+// rotate caret icon on the accordion panel on click
+var accordion = $(".accordion");
+
+$(".accordion-button").click(function () {
+  var buttonSVG = $(this).find("svg");
+
+  $(buttonSVG).toggleClass("rotate90");
+  $(accordion).find("svg").not(buttonSVG).removeClass("rotate90");
+});
