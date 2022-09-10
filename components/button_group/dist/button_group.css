@@ -4,21 +4,12 @@
 }
 .btn-group .btn,
 .btn-group a {
+  margin: 0 10px;
   opacity: 0.6;
   background: var(--white--600);
   border: 1px solid var(--white--700);
   color: var(--black--700);
   padding: 0.25em 1em;
-}
-.btn-group .btn:first-of-type,
-.btn-group a:first-of-type {
-  border-top-right-radius: 0px !important;
-  border-bottom-right-radius: 0px !important;
-}
-.btn-group .btn:last-of-type,
-.btn-group a:last-of-type {
-  border-top-left-radius: 0px !important;
-  border-bottom-left-radius: 0px !important;
 }
 .btn-group .btn.active,
 .btn-group a.active {
@@ -35,4 +26,23 @@
 .btn-group .btn:focus,
 .btn-group a:focus {
   box-shadow: none;
+}
+.btn-group.tight .btn,
+.btn-group.tight a {
+  margin: 0 10px;
+  opacity: 0.6;
+  background: var(--white--600);
+  border: 1px solid var(--white--700);
+  color: var(--black--700);
+  padding: 0.25em 1em;
+}
+.btn-group.tight .btn:first-of-type,
+.btn-group.tight a:first-of-type {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+.btn-group.tight .btn:last-of-type,
+.btn-group.tight a:last-of-type {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
 }
