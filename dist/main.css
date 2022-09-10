@@ -12,6 +12,7 @@
 @import "components/accordion/accordion.css";
 @import "components/dropdown/dropdown.css";
 @import "components/switch/switch.css";
+@import "components/button_group/button_group.css";
 /* Custom Resets found on https://piccalil.li/blog/a-modern-css-reset/ */
 /* Box sizing rules */
 :root {

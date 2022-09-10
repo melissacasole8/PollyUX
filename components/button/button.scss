@@ -1,5 +1,4 @@
 .btn {
-  border-radius: 99em;
   outline: none;
   white-space: nowrap;
   font-size: var(--roboto--14px);
@@ -16,6 +15,12 @@
     svg {
       margin: 0 0.6em 0 0;
     }
+  }
+  &.pill {
+    border-radius: 99em;
+  }
+  &.rounded {
+    border-radius: 8px;
   }
 }
 

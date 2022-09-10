@@ -5,6 +5,9 @@
 .badge.round {
   border-radius: 99em;
 }
+.badge.inactive {
+  opacity: 0.5;
+}
 .badge.badge-lg {
   padding: 0.5em 1em;
   font-size: var(--roboto--14px);

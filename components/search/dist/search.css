@@ -19,7 +19,7 @@
 }
 .search .input-wrap .input-group i path,
 .search .input-wrap .input-group svg path {
-  color: var(--black--300);
+  color: var(--black--500);
 }
 .search .input-wrap .input-group i:hover,
 .search .input-wrap .input-group svg:hover {

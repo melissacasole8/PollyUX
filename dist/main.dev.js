@@ -50,7 +50,7 @@ $(".search").click(function () {
   $(this).toggleClass("search-closed");
 }); // pil slider
 
-$(".choice button").click(function () {
+$(".pill-switch button").click(function () {
   $(this).closest(".cont").removeClass("left right center");
 
   if ($(this).hasClass("left")) {
@@ -60,4 +60,8 @@ $(".choice button").click(function () {
   } else {
     $(this).closest(".cont").addClass("right");
   }
+}); // button group toggling
+
+$(".btn-group > .btn").click(function () {
+  $(this).addClass("active").siblings().removeClass("active");
 });
