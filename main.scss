@@ -1,5 +1,6 @@
 //custom style tokens
 @import "tokens.css";
+@import "components/layout/layout.css";
 
 // custom components
 @import "components/nav/nav.css";
@@ -18,6 +19,11 @@
 
 /* Custom Resets found on https://piccalil.li/blog/a-modern-css-reset/ */
 /* Box sizing rules */
+
+:root {
+  font-size: 62.5%;
+}
+
 *,
 *::before,
 *::after {
@@ -87,6 +93,7 @@ body {
   text-rendering: optimizeSpeed;
   font-family: "Roboto", sans-serif;
   background-color: hsl(0, 0%, 96%);
+  font-size: 1.6rem;
 }
 
 /* A elements that don't have a class get default styles */

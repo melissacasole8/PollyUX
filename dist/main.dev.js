@@ -17,8 +17,10 @@ $(document).ready(function () {
 
     if ($(nav).attr("aria-expanded") == "true") {
       $(nav).attr("aria-expanded", false).addClass("closed");
+      $(".container-lg").removeClass("nav-open");
     } else {
       $(nav).attr("aria-expanded", true).removeClass("closed");
+      $(".container-lg").addClass("nav-open");
     }
   }); // input on focus/filled add class to label
 

@@ -7,7 +7,7 @@
     color: var(--primary--900);
     padding: 1.5em;
     border: none;
-    box-shadow: var(--elevation--medium);
+    box-shadow: var(--elevation);
     width: 100%;
     z-index: 2;
     display: flex;
@@ -31,12 +31,12 @@
       margin: 2em 0;
 
       h1 {
-        font-size: var(--roboto--32px--regular);
+        font-size: var(--roboto--32px);
         font-weight: 400;
       }
 
       h2 {
-        font-size: var(--roboto-18px--regular);
+        font-size: var(--roboto-18px);
         font-weight: 400;
       }
     }

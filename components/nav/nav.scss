@@ -1,10 +1,13 @@
 nav {
   background: var(--white--100);
-  box-shadow: var(--elevation--medium);
+  box-shadow: var(--elevation);
+  top: 0;
+  left: 0;
+  bottom: 0;
   padding: 1em;
   width: 200px;
   height: 100vh;
-  position: relative;
+  position: fixed;
   z-index: 1;
   transition: all 0.4s ease-in-out;
 
@@ -49,7 +52,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1em 0 0.15em 0;
-    font-size: var(--roboto--14px--medium);
+    font-size: var(--roboto--14px);
     font-weight: 500;
     text-transform: uppercase;
     color: var(--black--500);

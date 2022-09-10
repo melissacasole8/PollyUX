@@ -1,6 +1,9 @@
 .search {
   width: 50%;
 }
+.search .input-wrap .input-group {
+  margin: 0;
+}
 .search .input-wrap .input-group i,
 .search .input-wrap .input-group svg {
   right: 1em;
@@ -17,6 +20,24 @@
 .search .input-wrap .input-group input::placeholder {
   color: var(--black--400);
   font-weight: 400;
+}
+.search.search-lg input {
+  padding: 1.2em 1em;
+}
+.search.search-lg input ~ label {
+  transform: translateY(0.12em);
+}
+.search.search-md input {
+  padding: 0.55em 1em;
+}
+.search.search-md input ~ label {
+  transform: translateY(0.25em);
+}
+.search.search-sm input {
+  padding: 0.15em 1em;
+}
+.search.search-sm input ~ label {
+  transform: translateY(0.05em);
 }
 
 .input-group > :not(:first-child):not(.dropdown-menu):not(.form-floating):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback),

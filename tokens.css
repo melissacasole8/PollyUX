@@ -113,48 +113,26 @@
   --grape--900: rgba(46, 26, 127, 1);
 
   /*/* Text-size */
-  /* base size: roboto--16px--regular (16px) */
-  --roboto--90px--regular: 5.62rem;
-  --roboto--64px--regular: 4rem;
-  --roboto--12px--regular: 0.75rem;
-  --roboto--44px--regular: 2.75rem;
-  --roboto--32px--regular: 2rem;
-  --roboto--18px--regular: 1.12rem;
-  --roboto--16px--regular: 1rem;
-  --roboto--24px--regular: 1.5rem;
-  --roboto--12px--regular: 0.75rem;
-  --roboto--10px--regular: 0.625rem;
-  --roboto--8px--regular: 0.5rem;
-  --roboto--14px--regular: 0.88rem;
-  --roboto--14px--medium: 0.88rem;
-  --roboto--18px--medium: 1.12rem;
-  --roboto--90px--medium: 5.62rem;
-  --roboto--10px--medium: 0.62rem;
-  --roboto--64px--medium: 4rem;
-  --roboto--24px--medium: 1.5rem;
-  --roboto--16px--medium: 1rem;
-  --roboto--44px--medium: 2.75rem;
-  --roboto--32px--medium: 2rem;
-  --roboto--12px--medium: 0.75rem;
-  --roboto--8px--medium: 0.5rem;
-  --roboto--18px--bold: 1.12rem;
-  --roboto--16px--bold: 1rem;
-  --roboto--90px--bold: 5.62rem;
-  --roboto--14px--bold: 0.88rem;
-  --roboto--64px--bold: 4rem;
-  --roboto--24px--bold: 1.5rem;
-  --roboto--12px--bold: 0.75rem;
-  --roboto--44px--bold: 2.75rem;
-  --roboto--10px--bold: 0.62rem;
-  --roboto--32px--bold: 2rem;
-  --roboto--8px--bold: 0.5rem;
+  /* base size: roboto--16px (16px) */
+  --roboto--90px: 9rem;
+  --roboto--64px: 6.4rem;
+  --roboto--44px: 4.4rem;
+  --roboto--32px: 3.2rem;
+  --roboto--24px: 2.4rem;
+  --roboto--20px: 2rem;
+  --roboto--18px: 1.8rem;
+  --roboto--16px: 1.6rem;
+  --roboto--14px: 1.4rem;
+  --roboto--12px: 1.2rem;
+  --roboto--10px: 1rem;
+  --roboto--8px: 0.8rem;
 
   /* Elevation */
   --elevation--x-large: 0px 24px 28px rgba(0, 0, 0, 0.15);
   --elevation--large: 0px 0px 1px rgba(0, 0, 0, 0.04),
     0px 2px 6px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.06);
-  --elevation--medium: 0px 0px 1px rgba(0, 0, 0, 0.04),
-    0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04);
+  --elevation: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04),
+    0px 10px 20px rgba(0, 0, 0, 0.04);
   --elevation--small: 0px 0px 1px rgba(0, 0, 0, 0.04),
     0px 0px 2px rgba(0, 0, 0, 0.06), 0px 4px 8px rgba(0, 0, 0, 0.04);
 

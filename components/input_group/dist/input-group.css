@@ -1,73 +1,72 @@
-.input-group > :not(:first-child):not(.dropdown-menu):not(.form-floating):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback),
+.input-group
+  > :not(:first-child):not(.dropdown-menu):not(.form-floating):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback),
 .input-group > .form-floating:not(:first-child) > .form-control,
 .input-group > .form-floating:not(:first-child) > .form-select {
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
 }
 
-.input-group input [type=search] {
+.input-group input [type="search"] {
   border-radius: 8em;
 }
 
-.input-wrap {
-  width: 100%;
-}
-.input-wrap label {
+label {
   padding-left: 1em;
   color: var(--black--600);
-  font-size: var(--roboto--12px--regular);
+  font-size: var(--roboto--12px);
 }
-.input-wrap .input-group {
+
+.input-group {
+  width: 100%;
   margin: 1.5em 0;
   align-items: center;
   justify-content: center;
   position: relative;
 }
-.input-wrap .input-group i,
-.input-wrap .input-group svg {
+.input-group i,
+.input-group svg {
   z-index: 4;
   position: absolute;
   left: 0.5em;
   color: var(--primary--900);
 }
-.input-wrap .input-group i path,
-.input-wrap .input-group svg path {
+.input-group i path,
+.input-group svg path {
   color: var(--primary--900);
 }
-.input-wrap .input-group i + input,
-.input-wrap .input-group svg + input {
+.input-group i + input,
+.input-group svg + input {
   padding-left: 2em;
 }
-.input-wrap .input-group .form-control {
+.input-group .form-control {
   background-color: var(--white--100);
   border-radius: 8px;
   border-color: var(--white--600);
 }
-.input-wrap .input-group .form-control.w-icon ~ label {
+.input-group .form-control.w-icon ~ label {
   transform: translateX(1.5em);
 }
-.input-wrap .input-group .form-control:focus {
+.input-group .form-control:focus {
   box-shadow: var(--input--box-shadow);
 }
-.input-wrap .input-group .form-control:focus ~ label {
-  font-size: var(--roboto--12px--regular);
+.input-group .form-control:focus ~ label {
+  font-size: var(--roboto--12px);
   opacity: 1;
-  transform: translateY(-2.4em);
+  transform: translateY(0.8em);
 }
-.input-wrap .input-group .form-control::placeholder {
+.input-group .form-control::placeholder {
   color: var(--black--500);
 }
-.input-wrap .input-group .form-control ~ label {
+.input-group .form-control ~ label {
   transition: all 0.4s ease;
   opacity: 1;
   position: absolute;
   left: 0;
-  top: 9px;
-  font-size: var(--roboto--14px--regular);
+  font-size: var(--roboto--14px);
   opacity: 0.5;
 }
-.input-wrap .input-group .form-control ~ label.freeze {
-  font-size: var(--roboto--12px--regular);
+.input-group .form-control ~ label.freeze {
+  font-size: var(--roboto--12px);
   opacity: 1;
-  transform: translateY(-2.4em);
+  transform: translateY(0.8em);
 }

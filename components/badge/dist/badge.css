@@ -3,11 +3,11 @@
 }
 .badge.badge-lg {
   padding: 1em 2em;
-  font-size: var(--roboto--12px--medium);
+  font-size: var(--roboto--12px);
 }
 .badge.badge-sm {
   padding: 0.5em 1em;
-  font-size: var(--roboto-10px--medium);
+  font-size: var(--roboto-10px);
 }
 .badge.badge-primary {
   background-color: var(--primary--300);
@@ -23,5 +23,5 @@
 }
 .badge.badge-inactive {
   background-color: var(--black--200);
-  color: var(--black--700);
+  color: var(--black--400);
 }

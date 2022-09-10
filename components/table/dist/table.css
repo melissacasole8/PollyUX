@@ -6,29 +6,34 @@
 }
 
 .table-container {
+  width: 100%;
   box-shadow: var(--elevation--large);
   border-radius: 10px;
   background-color: var(--white--100);
 }
 .table-container .table-header {
-  padding: 1.5em 1em;
+  padding: 1em 1.2em;
 }
 .table-container .table-header h1 {
   color: var(--black--700);
   font-weight: 400;
-  font-size: var(--roboto--24px--regular);
+  font-size: var(--roboto--20px);
 }
 .table-container table tr {
   border: none;
 }
 .table-container table tr td {
-  font-size: var(--roboto--14px--regular);
+  font-size: var(--roboto--14px);
+}
+.table-container table tr td:not([role=button]) {
+  padding: 4px 20px;
 }
 .table-container table tr td.sec {
-  font-size: var(--roboto--12px--regular);
+  font-size: var(--roboto--14px);
   color: var(--black--500);
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
+  padding: 4px 20px;
 }
 .table-container table tr td.link {
   font-weight: 500;
@@ -38,11 +43,19 @@
   width: 28px;
   aspect-ratio: 1;
 }
+.table-container table tr td[role=button] {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 .table-container table thead tr {
   background-color: var(--white--400);
 }
 .table-container table thead tr th {
-  font-size: var(--roboto--14px--bold);
+  padding: 10px 20px;
+  font-size: var(--roboto--14px);
+  font-weight: 500;
+  color: var(--black--500);
 }
 .table-container table thead tr th i,
 .table-container table thead tr th svg {
