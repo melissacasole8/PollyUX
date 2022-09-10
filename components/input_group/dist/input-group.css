@@ -47,15 +47,15 @@ label {
   transform: translateX(1.5em);
 }
 .input-group .form-control.w-icon ~ label.freeze {
-  transform: translateY(-0.8em);
+  transform: translateY(-2.4em);
 }
 .input-group .form-control:focus {
-  box-shadow: var(--input--box-shadow);
+  box-shadow: var(--primary--box-shadow);
 }
 .input-group .form-control:focus ~ label {
   font-size: var(--roboto--12px);
   opacity: 1;
-  transform: translateY(0.8em);
+  transform: translateY(-2.4em);
 }
 .input-group .form-control::placeholder {
   color: var(--black--500);
@@ -71,5 +71,5 @@ label {
 .input-group .form-control ~ label.freeze {
   font-size: var(--roboto--12px);
   opacity: 1;
-  transform: translateY(0.8em);
+  transform: translateY(-2.4em);
 }

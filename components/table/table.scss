@@ -45,7 +45,7 @@
 
         .btn {
           padding: 0;
-          width: 28px;
+          width: 22px;
           aspect-ratio: 1;
         }
         &[role="button"] {
@@ -73,7 +73,7 @@
               transition: all 0.4s ease;
               color: var(--black--500);
               &:hover {
-                color: var(--primary--900);
+                color: var(--black--800);
               }
             }
             &:hover {

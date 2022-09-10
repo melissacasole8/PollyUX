@@ -5,4 +5,23 @@
   padding: 1.5em;
   border: none;
   box-shadow: var(--elevation);
+
+  .card-title {
+    h1 {
+      font-size: var(--roboto--20px);
+      font-weight: 400;
+      color: var(--primary--900);
+    }
+  }
+
+  .item {
+    margin: 1em 0;
+    .key,
+    p {
+      font-size: var(--roboto--14px);
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

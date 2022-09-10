@@ -51,3 +51,8 @@ $(document).ready(function () {
     });
   });
 });
+
+//search animation
+$(".search").click(function () {
+  $(this).toggleClass("search-closed");
+});

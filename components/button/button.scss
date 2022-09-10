@@ -49,6 +49,30 @@
   }
 }
 
+.btn-dragonfruit {
+  background-color: var(--dragon-fruit--500);
+  border: 1px solid var(--dragon-fruit--500);
+  color: var(--white--100);
+  i,
+  svg {
+    path {
+      color: var(--white--100);
+    }
+  }
+  &:hover {
+    border-color: var(--dragon-fruit--400);
+    background-color: var(--dragon-fruit--400);
+    color: var(--white--100);
+  }
+
+  &:focus {
+    border-color: var(--dragon-fruit-600);
+    background-color: var(--dragon-fruit--00);
+    color: var(--white--100);
+    box-shadow: --dragon-fruit--box-shadow;
+  }
+}
+
 // size classes
 
 .btn-xlg {
@@ -64,6 +88,6 @@
 }
 
 .btn-sm {
-  padding: 0.1em 1em;
+  padding: 0.3em 1em;
   font-size: var(--roboto--12px);
 }

@@ -1,21 +1,27 @@
 .header {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   gap: 1em;
-  margin: 1em 0;
+  margin: 2em 0;
   flex-wrap: wrap;
   width: 100%;
 }
-.header .search {
-  width: 50%;
+.header .page-title {
+  width: fit-content;
 }
+.header .page-title h1 {
+  text-align: left;
+  font-weight: 300;
+}
+.header .end,
 .header .actions {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
-.header .actions button {
+.header .end .actions button,
+.header .actions .actions button {
   margin: 0 0.5em;
 }
 

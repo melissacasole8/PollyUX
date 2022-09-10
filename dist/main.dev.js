@@ -44,4 +44,8 @@ $(document).ready(function () {
       checkInput();
     });
   });
+}); //search animation
+
+$(".search").click(function () {
+  $(this).toggleClass("search-closed");
 });

@@ -1,3 +1,13 @@
+.search {
+  width: 50%;
+  transition: all 0.4s ease;
+}
+.search.search-closed {
+  width: 48px;
+}
+.search.search-closed label {
+  display: none;
+}
 .search .input-wrap .input-group {
   margin: 0;
 }
@@ -11,6 +21,10 @@
 .search .input-wrap .input-group svg path {
   color: var(--black--300);
 }
+.search .input-wrap .input-group i:hover,
+.search .input-wrap .input-group svg:hover {
+  cursor: pointer;
+}
 .search .input-wrap .input-group input {
   border-radius: 99em !important;
 }
@@ -21,8 +35,11 @@
 .search.search-lg input {
   padding: 0.6em 1em;
 }
-.search.search-lg input ~ label {
-  transform: translateY(0.12em);
+.search.search-lg input:focus ~ label {
+  transform: translateY(-2.8em);
+}
+.search.search-lg input ~ label.freeze {
+  transform: translateY(-2.8em);
 }
 .search.search-md input {
   padding: 0.55em 1em;

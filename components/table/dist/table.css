@@ -42,7 +42,7 @@
 }
 .table-container table tr td .btn {
   padding: 0;
-  width: 28px;
+  width: 22px;
   aspect-ratio: 1;
 }
 .table-container table tr td[role=button] {
@@ -70,7 +70,7 @@
 }
 .table-container table thead tr th i path:hover,
 .table-container table thead tr th svg path:hover {
-  color: var(--primary--900);
+  color: var(--black--800);
 }
 .table-container table thead tr th i:hover,
 .table-container table thead tr th svg:hover {
