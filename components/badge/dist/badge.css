@@ -2,12 +2,12 @@
   font-weight: 500;
 }
 .badge.badge-lg {
-  padding: 1em 2em;
-  font-size: var(--roboto--12px);
+  padding: 0.5em 1em;
+  font-size: var(--roboto--14px);
 }
 .badge.badge-sm {
-  padding: 0.5em 1em;
-  font-size: var(--roboto-10px);
+  padding: 0.25em 0.5em;
+  font-size: var(--roboto--12px);
 }
 .badge.badge-primary {
   background-color: var(--primary--300);
