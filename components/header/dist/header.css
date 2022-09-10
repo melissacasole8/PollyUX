@@ -7,3 +7,35 @@
   flex-wrap: wrap;
   width: 100%;
 }
+.header .search {
+  width: 50%;
+}
+.header .actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .actions button {
+  margin: 0 0.5em;
+}
+
+@media screen and (max-width: 900px) {
+  .header .search {
+    width: auto;
+  }
+}
+@media screen and (max-width: 710px) {
+  .header div,
+.header button {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 414px) {
+  .header .actions {
+    flex-direction: column;
+  }
+  .header .actions button {
+    margin: 0.5em 0;
+    width: 100% !important;
+  }
+}

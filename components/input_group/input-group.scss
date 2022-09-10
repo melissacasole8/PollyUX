@@ -49,6 +49,9 @@ label {
     &.w-icon {
       ~ label {
         transform: translateX(1.5em);
+        &.freeze {
+          transform: translateY(-0.8em);
+        }
       }
     }
     &:focus {

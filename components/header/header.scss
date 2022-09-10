@@ -6,4 +6,47 @@
   margin: 1em 0;
   flex-wrap: wrap;
   width: 100%;
+
+  .search {
+    width: 50%;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      margin: 0 0.5em;
+    }
+  }
+}
+
+// mobile breaks
+@media screen and (max-width: 900px) {
+  .header {
+    .search {
+      width: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .header {
+    div,
+    button {
+      width: 100% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .header {
+    .actions {
+      flex-direction: column;
+      button {
+        margin: 0.5em 0;
+        width: 100% !important;
+      }
+    }
+  }
 }

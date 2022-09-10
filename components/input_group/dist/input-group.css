@@ -46,6 +46,9 @@ label {
 .input-group .form-control.w-icon ~ label {
   transform: translateX(1.5em);
 }
+.input-group .form-control.w-icon ~ label.freeze {
+  transform: translateY(-0.8em);
+}
 .input-group .form-control:focus {
   box-shadow: var(--input--box-shadow);
 }

@@ -20,10 +20,10 @@ $(document).ready(function () {
 
     if ($(nav).attr("aria-expanded") == "true") {
       $(nav).attr("aria-expanded", false).addClass("closed");
-      $(".container-lg").removeClass("nav-open");
+      $(".polly-container").removeClass("nav-open");
     } else {
       $(nav).attr("aria-expanded", true).removeClass("closed");
-      $(".container-lg").addClass("nav-open");
+      $(".polly-container").addClass("nav-open");
     }
   });
 

@@ -6,7 +6,6 @@
 }
 
 .table-container {
-  width: 100%;
   box-shadow: var(--elevation--large);
   border-radius: 10px;
   background-color: var(--white--100);
@@ -22,14 +21,17 @@
 .table-container table tr {
   border: none;
 }
+.table-container table tr:last-of-type {
+  border-bottom-right-radius: 10px;
+}
 .table-container table tr td {
-  font-size: var(--roboto--14px);
+  font-size: var(--roboto--12px);
 }
 .table-container table tr td:not([role=button]) {
   padding: 4px 20px;
 }
 .table-container table tr td.sec {
-  font-size: var(--roboto--14px);
+  font-size: var(--roboto--12px);
   color: var(--black--500);
   text-transform: uppercase;
   font-weight: 400;
@@ -53,7 +55,7 @@
 }
 .table-container table thead tr th {
   padding: 10px 20px;
-  font-size: var(--roboto--14px);
+  font-size: var(--roboto--12px);
   font-weight: 500;
   color: var(--black--500);
 }
