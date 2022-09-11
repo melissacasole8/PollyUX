@@ -97,6 +97,10 @@ html:focus-within {
   display: flex;
 }
 
+.muted {
+  opacity: 0.5;
+}
+
 /* Set core body defaults */
 body {
   height: 100vh;
