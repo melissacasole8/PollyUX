@@ -15,6 +15,7 @@
 @import "components/badge/badge.css";
 @import "components/accordion/accordion.css";
 @import "components/dropdown/dropdown.css";
+@import "components/checkbox/checkbox.css";
 @import "components/switch/switch.css";
 @import "components/button_group/button_group.css";
 
@@ -42,6 +43,9 @@ svg {
 }
 .rotate90 {
   transform: rotate(90deg);
+}
+.rotate180 {
+  transform: rotate(180deg);
 }
 
 *,

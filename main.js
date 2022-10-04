@@ -95,3 +95,25 @@ $(".accordion-button").click(function () {
   $(buttonSVG).toggleClass("rotate90");
   $(accordion).find("svg").not(buttonSVG).removeClass("rotate90");
 });
+
+// toggle filter in table view
+// $(".filter-handle").click(function () {
+//   var filter = $(".filter");
+
+//   if ($(filter).hasClass("hide")) {
+//     $(filter).removeClass("hide");
+//   } else {
+//     $(filter).addClass("hide");
+//   }
+// });
+
+$(".filter-handle").click(function () {
+  var filter = $(".filter");
+  var icon = "<i class='fas fa-caret-up'></i>";
+
+  $(filter).slideToggle("slow");
+  $(this).text(
+    $(this).text() == "Hide Filters" ? "Show Filters" : "Hide Filters"
+  );
+  $(this).append("<i class='fas fa-caret-down')</i>");
+});

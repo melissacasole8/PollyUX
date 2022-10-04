@@ -35,20 +35,19 @@
         color: var(--primary--900);
       }
     }
-    .filter {
+    .filter-handle {
       cursor: pointer;
-      p {
-        transition: all 0.4s ease;
-        font-size: var(--roboto--14px);
-        color: var(--black--500);
-        i,
-        svg {
-          margin-left: 0.475em;
-          path {
-            color: var(--black--500);
-          }
+      transition: all 0.4s ease;
+      font-size: var(--roboto--14px);
+      color: var(--black--500);
+      i,
+      svg {
+        margin-left: 0.475em;
+        path {
+          color: var(--black--500);
         }
       }
+
       &:hover {
         p {
           color: var(--black--300);

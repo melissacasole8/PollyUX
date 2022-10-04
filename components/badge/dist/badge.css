@@ -1,6 +1,21 @@
 .badge {
   font-weight: 500;
   margin: 0 0.5em;
+  display: inline;
+}
+.badge i path,
+.badge svg path {
+  color: inherit;
+}
+.badge label {
+  margin-right: 0.365em;
+}
+.badge label,
+.badge span,
+.badge i,
+.badge svg {
+  color: inherit;
+  padding: 0;
 }
 .badge.round {
   border-radius: 99em;
@@ -40,4 +55,12 @@
   background-color: var(--white--200);
   border: 1px solid var(--black--300);
   color: var(--black--900);
+}
+.badge.dismiss i,
+.badge.dismiss svg {
+  margin-left: 0.675em;
+}
+.badge.dismiss i:hover,
+.badge.dismiss svg:hover {
+  cursor: pointer;
 }

@@ -81,7 +81,7 @@ label {
 }
 .input-group .form-control:hover {
   cursor: pointer;
-  background-color: var(--white--200);
+  background-color: var(--white--300);
 }
 .input-group.input-lg input {
   padding: 10px 32px;

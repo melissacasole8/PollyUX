@@ -12,6 +12,7 @@
 @import "components/badge/badge.css";
 @import "components/accordion/accordion.css";
 @import "components/dropdown/dropdown.css";
+@import "components/checkbox/checkbox.css";
 @import "components/switch/switch.css";
 @import "components/button_group/button_group.css";
 /* Custom Resets found on https://piccalil.li/blog/a-modern-css-reset/ */
@@ -33,6 +34,10 @@ svg {
 
 .rotate90 {
   transform: rotate(90deg);
+}
+
+.rotate180 {
+  transform: rotate(180deg);
 }
 
 *,

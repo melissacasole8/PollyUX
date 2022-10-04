@@ -57,8 +57,8 @@
             <table class="table table-fluid">
                 <div class="table-header">
                     <h1>Products</h1>
-                    <div class="filter">
-                        <p>Open Filter<i class="fas fa-caret-down"></i></p>
+                    <div class="filter-handle">
+                        Show Filters<i class="fas fa-caret-up "></i>
                     </div>
                     <div class="end">
                         <div class="search search-lg">
@@ -73,37 +73,161 @@
 
                     </div>
                 </div>
+                <div class="filter-badges">
+                    <div class="badge badge-primary dismiss"><label>Status:</label><span>Active</span><i
+                            class="fas fa-times"></i></div>
+                    <div class="badge badge-primary dismiss"><label>Rates:</label><span>Has Rate Ceiling: 2.0</span><i
+                            class="fas fa-times"></i></div>
+                    <div class="badge badge-primary dismiss"><label>Rates:</label><span>Custom Note Rate: 2.0</span><i
+                            class="fas fa-times"></i></div>
+                    <div class="badge badge-primary dismiss"><label>Hedge:</label><span>No</span><i
+                            class="fas fa-times"></i></div>
+                    <p class="clearAll">Clear All</p>
+                </div>
+                <div class="filter" style="display: none">
+                    <section>
+                        <div class="filter-row">
+                            <div class="input-wrap">
+                                <div class="input-group">
+                                    <input autocomplete="Product Name" type="text" id="Product Name" name="Product Name"
+                                        class="form-control " aria-label="Product Name"
+                                        aria-describedby="basic-addon1" />
+                                    <label for="Product Name">Product Name</label>
+                                </div>
+                            </div>
+                            <div class="input-wrap">
+                                <div class="input-group">
+                                    <input autocomplete="Product Name" type="text" id="Product Name" name="Product Name"
+                                        class="form-control " aria-label="Product Name"
+                                        aria-describedby="basic-addon1" />
+                                    <label for="Product Name">Product Name</label>
+                                </div>
+                            </div>
+                            <div class="input-wrap">
+                                <div class="input-group">
+                                    <input autocomplete="Other Keywords (ex: FHA, Conventioanl)" type="text"
+                                        id="Other Keywords (ex: FHA, Conventioanl)"
+                                        name="Other Keywords (ex: FHA, Conventioanl)" class="form-control "
+                                        aria-label="Other Keywords (ex: FHA, Conventioanl)"
+                                        aria-describedby="basic-addon1" />
+                                    <label for="Other Keywords (ex: FHA, Conventioanl)">Other Keywords (ex: FHA,
+                                        Conventioanl)</label>
+                                </div>
+                            </div>
 
-                <div class="filter">
-                    <div class="filter-row">
-                        <div class="input-wrap">
-                            <div class="input-group">
-                                <input autocomplete="Product Name" type="text" id="Product Name" name="Product Name"
-                                    class="form-control " aria-label="Product Name"
-                                    aria-describedby="basic-addon1" />
-                                <label for="Product Name">Product Name</label>
+                        </div>
+                    </section>
+                    <section>
+                        <h1 class="filter-section-title">Additional Details</h1>
+                        <div class="filter-row">
+                            <div class="input-wrap">
+                                <div class="input-group">
+                                    <input type="text" id="Product Name" class="form-control " aria-label="Product Name"
+                                        aria-describedby="basic-addon1" />
+                                    <label for="Product Name">Product Name</label>
+                                </div>
+
+                            </div>
+                            <div class="input-wrap">
+                                <div class="input-group">
+                                    <input type="text" id="Category" class="form-control " aria-label="Category"
+                                        aria-describedby="basic-addon1" />
+                                    <label for="Category">Category</label>
+                                </div>
+
+                            </div>
+                            <div class="input-wrap">
+                                <div class="input-group">
+                                    <input type="text" id="Lien Position" class="form-control "
+                                        aria-label="Lien Position" aria-describedby="basic-addon1" />
+                                    <label for="Lien Position">Lien Position</label>
+                                </div>
+
+                            </div>
+                            <div class="input-wrap">
+                                <div class="input-group">
+                                    <input type="text" id="Amortization Type" class="form-control "
+                                        aria-label="Amortization Type" aria-describedby="basic-addon1" />
+                                    <label for="Amortization Type">Amortization Type</label>
+                                </div>
+
+                            </div>
+                            <div class="input-wrap">
+                                <div class="input-group">
+                                    <input type="text" id="Loan Term" class="form-control " aria-label="Loan Term"
+                                        aria-describedby="basic-addon1" />
+                                    <label for="Loan Term">Loan Term</label>
+                                </div>
+
+                            </div>
+                            <div class="input-wrap">
+                                <div class="input-group">
+                                    <input type="text" id="Interest Only Months" class="form-control "
+                                        aria-label="Interest Only Months" aria-describedby="basic-addon1" />
+                                    <label for="Interest Only Months">Interest Only Months</label>
+                                </div>
+
                             </div>
                         </div>
-                        <div class="input-wrap">
-                            <div class="input-group">
-                                <input autocomplete="Product Name" type="text" id="Product Name" name="Product Name"
-                                    class="form-control " aria-label="Product Name"
-                                    aria-describedby="basic-addon1" />
-                                <label for="Product Name">Product Name</label>
+                    </section>
+                    <section>
+                      <div class="column">
+                          <div class="choices">
+                            <h1 class="filter-section-title">Status</h1>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="active" checked >
+                                <label class="form-check-label" for="active" >
+                                  Active
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="inactive" >
+                                <label class="form-check-label" for="inactive">
+                                  Inactive
+                                </label>
                             </div>
                         </div>
-                        <div class="input-wrap">
-                            <div class="input-group">
-                                <input autocomplete="Other Keywords (ex: FHA, Conventioanl)" type="text"
-                                    id="Other Keywords (ex: FHA, Conventioanl)"
-                                    name="Other Keywords (ex: FHA, Conventioanl)" class="form-control "
-                                    aria-label="Other Keywords (ex: FHA, Conventioanl)"
-                                    aria-describedby="basic-addon1" />
-                                <label for="Other Keywords (ex: FHA, Conventioanl)">Other Keywords (ex: FHA,
-                                    Conventioanl)</label>
+                         <div class="choices">
+                            <h1 class="filter-section-title">Rates</h1>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="rateFloor" >
+                                <label class="form-check-label" for="rateFloor" >
+                                Has Rate Floor
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="rateCeiling" >
+                                <label class="form-check-label" for="rateCeiling">
+                                  Has Rate Ceiling
+                                </label>
                             </div>
                         </div>
-                    </div>
+                         <div class="choices">
+                            <h1 class="filter-section-title">Locks</h1>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="lock" >
+                                <label class="form-check-label" for="lock" >
+                                  Custom Lock Periods
+                                </label>
+                            </div>
+                        </div>
+                         <div class="choices">
+                            <h1 class="filter-section-title">Hedge</h1>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="no" >
+                                <label class="form-check-label" for="no" >
+                                  No
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="yes" >
+                                <label class="form-check-label" for="yes">
+                                  Yes
+                                </label>
+                            </div>
+                        </div>
+                      </div>
+                    </section>
                 </div>
                 <thead>
                     <tr>

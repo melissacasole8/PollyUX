@@ -30,27 +30,25 @@
 .table-container .table-header.link h1 {
   color: var(--primary--900);
 }
-.table-container .table-header .filter {
+.table-container .table-header .filter-handle {
   cursor: pointer;
-}
-.table-container .table-header .filter p {
   transition: all 0.4s ease;
   font-size: var(--roboto--14px);
   color: var(--black--500);
 }
-.table-container .table-header .filter p i,
-.table-container .table-header .filter p svg {
+.table-container .table-header .filter-handle i,
+.table-container .table-header .filter-handle svg {
   margin-left: 0.475em;
 }
-.table-container .table-header .filter p i path,
-.table-container .table-header .filter p svg path {
+.table-container .table-header .filter-handle i path,
+.table-container .table-header .filter-handle svg path {
   color: var(--black--500);
 }
-.table-container .table-header .filter:hover p {
+.table-container .table-header .filter-handle:hover p {
   color: var(--black--300);
 }
-.table-container .table-header .filter:hover p i path,
-.table-container .table-header .filter:hover p svg path {
+.table-container .table-header .filter-handle:hover p i path,
+.table-container .table-header .filter-handle:hover p svg path {
   color: var(--black--300);
 }
 .table-container table tr {

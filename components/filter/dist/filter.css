@@ -1,5 +1,11 @@
 .filter {
-  padding: 0 1em;
+  padding: 0 1em 1em 1em;
+}
+.filter .filter-section-title {
+  font-size: var(--roboto--12px);
+  padding-left: 1em;
+  text-transform: uppercase;
+  color: var(--black--500);
 }
 .filter .filter-row {
   display: flex;
@@ -9,5 +15,39 @@
 }
 .filter .filter-row .input-wrap {
   flex-grow: 1;
-  margin-right: 0.675em;
+  margin: 0.675em;
+}
+.filter .filter-row .input-group {
+  margin: 0 0 1em 0;
+}
+.filter.hide {
+  display: none;
+}
+
+.filter-badges {
+  padding: 0 0 1em 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+.filter-badges .badge {
+  margin: 0.375em;
+}
+.filter-badges .clearAll {
+  font-size: var(--roboto--10px);
+  color: var(--primary--900);
+  padding-left: 0.675em;
+  cursor: pointer;
+}
+
+.column {
+  padding-right: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.column .filter-section-title {
+  margin-bottom: 0.675em;
 }
