@@ -1,7 +1,7 @@
 .badge {
   font-weight: 500;
   margin: 0 0.5em;
-  display: inline;
+  display: inherit;
 }
 .badge i path,
 .badge svg path {

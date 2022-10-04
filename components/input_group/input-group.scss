@@ -13,7 +13,7 @@
 // custom styles here
 
 label {
-  padding-left: 1em;
+  padding-left: 0.675em;
   color: var(--black--600);
   font-size: var(--roboto--12px);
 }
@@ -46,16 +46,17 @@ label {
 
   .form-control {
     transition: all 0.4s ease;
-    font-size: 1.6rem;
+    font-size: var(--roboto--14px);
     background-color: var(--white--100);
     border-radius: 8px !important;
     border-color: var(--white--600);
+    padding: 0.765em;
 
     &.w-icon {
       ~ label {
-        transform: translateX(1.5em);
+        transform: translate(0.225em, -2em);
         &.freeze {
-          transform: translate(1em, -2em);
+          transform: translate(0.225em, -2em);
         }
       }
     }
@@ -64,12 +65,13 @@ label {
       ~ label {
         font-size: var(--roboto--12px);
         opacity: 1;
-        transform: translate(0.325em, -1.5em);
+        transform: translate(0.225em, -2em);
       }
     }
 
     &::placeholder {
       color: var(--black--500);
+      font-size: var(--roboto--12px);
     }
 
     ~ label {
@@ -85,7 +87,7 @@ label {
       &.freeze {
         font-size: var(--roboto--12px);
         opacity: 1;
-        transform: translate(0.325em, -1.5em);
+        transform: translate(0.225em, -2em);
       }
     }
     &:hover {

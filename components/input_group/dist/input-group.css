@@ -10,7 +10,7 @@
 }
 
 label {
-  padding-left: 1em;
+  padding-left: 0.675em;
   color: var(--black--600);
   font-size: var(--roboto--12px);
 }
@@ -42,16 +42,17 @@ label {
 }
 .input-group .form-control {
   transition: all 0.4s ease;
-  font-size: 1.6rem;
+  font-size: var(--roboto--14px);
   background-color: var(--white--100);
   border-radius: 8px !important;
   border-color: var(--white--600);
+  padding: 0.765em;
 }
 .input-group .form-control.w-icon ~ label {
-  transform: translateX(1.5em);
+  transform: translate(0.225em, -2em);
 }
 .input-group .form-control.w-icon ~ label.freeze {
-  transform: translate(1em, -2em);
+  transform: translate(0.225em, -2em);
 }
 .input-group .form-control:focus {
   box-shadow: var(--primary--box-shadow);
@@ -59,10 +60,11 @@ label {
 .input-group .form-control:focus ~ label {
   font-size: var(--roboto--12px);
   opacity: 1;
-  transform: translate(0.325em, -1.5em);
+  transform: translate(0.225em, -2em);
 }
 .input-group .form-control::placeholder {
   color: var(--black--500);
+  font-size: var(--roboto--12px);
 }
 .input-group .form-control ~ label {
   transition: all 0.4s ease;
@@ -77,7 +79,7 @@ label {
 .input-group .form-control ~ label.freeze {
   font-size: var(--roboto--12px);
   opacity: 1;
-  transform: translate(0.325em, -1.5em);
+  transform: translate(0.225em, -2em);
 }
 .input-group .form-control:hover {
   cursor: pointer;

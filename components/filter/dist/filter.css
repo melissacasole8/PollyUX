@@ -23,6 +23,13 @@
 .filter.hide {
   display: none;
 }
+.filter footer {
+  padding: 2em 1em 3em;
+  width: 100%;
+}
+.filter footer .btn {
+  float: right;
+}
 
 .filter-badges {
   padding: 0 0 1em 1.5em;

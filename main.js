@@ -109,11 +109,23 @@ $(".accordion-button").click(function () {
 
 $(".filter-handle").click(function () {
   var filter = $(".filter");
-  var icon = "<i class='fas fa-caret-up'></i>";
+  var icon = $(".filter-handle").find("svg");
+  $(icon).toggleClass("rotate180");
 
   $(filter).slideToggle("slow");
   $(this).text(
     $(this).text() == "Hide Filters" ? "Show Filters" : "Hide Filters"
   );
   $(this).append("<i class='fas fa-caret-down')</i>");
+});
+
+//remove badges one by one
+
+$(".dismiss").click(function () {
+  $(this).remove();
+});
+
+//remove all badges by hitting Clear All
+$(".clearAll").click(function () {
+  $(this).parent().children().remove();
 });
