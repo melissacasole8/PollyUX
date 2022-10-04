@@ -1,4 +1,4 @@
-nav {
+.leftNav {
   background: var(--white--100);
   box-shadow: var(--elevation);
   top: 0;
@@ -11,7 +11,7 @@ nav {
   z-index: 1;
   transition: all 0.4s ease-in-out;
 }
-nav .closed-icon {
+.leftNav .closed-icon {
   transition: transform 0.4s ease-in-out;
   opacity: 0;
   width: 40px;
@@ -20,7 +20,7 @@ nav .closed-icon {
   margin: 0;
   transform: translateX(-14em);
 }
-nav .anchor {
+.leftNav .anchor {
   cursor: pointer;
   transition: all 0.4s ease;
   position: absolute;
@@ -35,16 +35,16 @@ nav .anchor {
   width: 40px;
   height: 40px;
 }
-nav .anchor:hover {
+.leftNav .anchor:hover {
   border-color: var(--primary--900);
 }
-nav header {
+.leftNav header {
   padding-bottom: 0.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav .section-title {
+.leftNav .section-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,15 +54,15 @@ nav .section-title {
   text-transform: uppercase;
   color: var(--black--500);
 }
-nav ul li {
+.leftNav ul li {
   transition: all 0.4s ease;
   padding: 0.5em 0;
   display: flex;
   justify-content: start;
   align-items: center;
 }
-nav ul li i,
-nav ul li svg {
+.leftNav ul li i,
+.leftNav ul li svg {
   margin-right: 0.5em;
   width: 18px;
   height: 18px;
@@ -70,23 +70,23 @@ nav ul li svg {
   justify-content: center;
   align-items: center;
 }
-nav ul li:hover {
+.leftNav ul li:hover {
   color: var(--primary--900);
   cursor: pointer;
 }
-nav ul li:hover i {
+.leftNav ul li:hover i {
   color: var(--primary--900);
 }
-nav.closed {
+.leftNav.closed {
   margin-left: -145px;
 }
-nav.closed .anchor {
+.leftNav.closed .anchor {
   transform: rotate(180deg);
 }
-nav.closed ul li {
+.leftNav.closed ul li {
   justify-content: space-between;
 }
-nav.closed .closed-icon {
+.leftNav.closed .closed-icon {
   transform: translateX(0.7em);
   opacity: 1;
 }

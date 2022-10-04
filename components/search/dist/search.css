@@ -6,6 +6,7 @@
   width: 48px;
 }
 .search.search-closed label {
+  background: none;
   display: none;
 }
 .search .input-wrap .input-group {
@@ -32,14 +33,30 @@
   color: var(--black--400);
   font-weight: 400;
 }
+.search .input-wrap .input-group.bg-transparent input {
+  border-color: transparent;
+  background: transparent;
+}
+.search .input-wrap .input-group.bg-transparent input ~ label {
+  display: none;
+  background: transparent;
+  transform: translate(0.2em, -2em);
+}
+.search .input-wrap .input-group.bg-transparent input:hover {
+  border-color: var(--primary--600);
+}
 .search.search-lg input {
   padding: 0.6em 1em;
 }
 .search.search-lg input:focus ~ label {
-  transform: translateY(-2.8em);
+  display: none;
+  transform: translate(0.2em, -2em);
+}
+.search.search-lg input ~ label {
+  padding-left: 1em;
 }
 .search.search-lg input ~ label.freeze {
-  transform: translateY(-2.8em);
+  transform: translate(0.2em, -2em);
 }
 .search.search-md input {
   padding: 0.55em 1em;

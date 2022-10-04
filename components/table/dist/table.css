@@ -16,6 +16,12 @@
   justify-content: space-between;
   align-items: center;
 }
+.table-container .table-header .search {
+  width: auto;
+}
+.table-container .table-header .search:focus + label {
+  display: none;
+}
 .table-container .table-header h1 {
   color: var(--black--700);
   font-weight: 400;
@@ -23,6 +29,29 @@
 }
 .table-container .table-header.link h1 {
   color: var(--primary--900);
+}
+.table-container .table-header .filter {
+  cursor: pointer;
+}
+.table-container .table-header .filter p {
+  transition: all 0.4s ease;
+  font-size: var(--roboto--14px);
+  color: var(--black--500);
+}
+.table-container .table-header .filter p i,
+.table-container .table-header .filter p svg {
+  margin-left: 0.475em;
+}
+.table-container .table-header .filter p i path,
+.table-container .table-header .filter p svg path {
+  color: var(--black--500);
+}
+.table-container .table-header .filter:hover p {
+  color: var(--black--300);
+}
+.table-container .table-header .filter:hover p i path,
+.table-container .table-header .filter:hover p svg path {
+  color: var(--black--300);
 }
 .table-container table tr {
   border: none;
@@ -50,11 +79,6 @@
   padding: 0;
   width: 22px;
   aspect-ratio: 1;
-}
-.table-container table tr td[role=button] {
-  justify-content: center;
-  align-items: center;
-  display: flex;
 }
 .table-container table tr td[role=button] .dropdown-toggle::after {
   content: none;
@@ -95,20 +119,23 @@
 .table-container table thead tr th svg {
   margin-left: 0.5em;
 }
+.table-container table tbody {
+  border-style: hidden;
+}
 .table-container table tbody tr:nth-child(even) {
   background-color: var(--white--400);
 }
 .table-container table tbody tr:nth-child(odd) {
   background-color: var(--white--100);
 }
-.table-container table tbody tr:last-of-type td:first-of-type {
-  border-bottom-left-radius: 10px;
-}
 .table-container table tbody tr:last-of-type td:last-of-type {
   border-bottom-right-radius: 10px;
 }
+.table-container table tbody tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 10px;
+}
 
-@media (max-width: 620px) {
+@media (max-width: 900px) {
   .table-fluid thead {
     display: none;
   }
@@ -116,7 +143,6 @@
 .table-fluid tbody > tr th {
     display: flex;
     justify-content: space-between;
-    justify-content: baseline;
   }
   .table-fluid tbody > tr > td[data-title]:before,
 .table-fluid tbody > tr th[data-title]:before {

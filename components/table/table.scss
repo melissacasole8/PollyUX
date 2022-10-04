@@ -16,6 +16,15 @@
     justify-content: space-between;
     align-items: center;
 
+    .search {
+      width: auto;
+      &:focus {
+        + label {
+          display: none;
+        }
+      }
+    }
+
     h1 {
       color: var(--black--700);
       font-weight: 400;
@@ -24,6 +33,32 @@
     &.link {
       h1 {
         color: var(--primary--900);
+      }
+    }
+    .filter {
+      cursor: pointer;
+      p {
+        transition: all 0.4s ease;
+        font-size: var(--roboto--14px);
+        color: var(--black--500);
+        i,
+        svg {
+          margin-left: 0.475em;
+          path {
+            color: var(--black--500);
+          }
+        }
+      }
+      &:hover {
+        p {
+          color: var(--black--300);
+          i,
+          svg {
+            path {
+              color: var(--black--300);
+            }
+          }
+        }
       }
     }
   }
@@ -55,11 +90,6 @@
           padding: 0;
           width: 22px;
           aspect-ratio: 1;
-        }
-        &[role="button"] {
-          justify-content: center;
-          align-items: center;
-          display: flex;
         }
         &[role="button"] {
           .dropdown-toggle {
@@ -113,6 +143,7 @@
     }
 
     tbody {
+      border-style: hidden;
       tr {
         &:nth-child(even) {
           background-color: var(--white--400);
@@ -124,12 +155,12 @@
 
         &:last-of-type {
           td {
-            &:first-of-type {
-              border-bottom-left-radius: 10px;
-            }
-
             &:last-of-type {
               border-bottom-right-radius: 10px;
+            }
+
+            &:first-of-type {
+              border-bottom-left-radius: 10px;
             }
           }
         }
@@ -140,7 +171,7 @@
 
 // responsiveness
 .table-fluid {
-  @media (max-width: 620px) {
+  @media (max-width: 900px) {
     thead {
       display: none;
     }
@@ -151,7 +182,6 @@
         th {
           display: flex;
           justify-content: space-between;
-          justify-content: baseline;
 
           &[data-title] {
             &:before {

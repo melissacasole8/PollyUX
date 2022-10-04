@@ -25,6 +25,10 @@ label {
   justify-content: center;
   position: relative;
 
+  input {
+    padding: 4px 10px;
+  }
+
   i,
   svg {
     z-index: 4;
@@ -44,14 +48,14 @@ label {
     transition: all 0.4s ease;
     font-size: 1.6rem;
     background-color: var(--white--100);
-    border-radius: 8px;
+    border-radius: 8px !important;
     border-color: var(--white--600);
 
     &.w-icon {
       ~ label {
         transform: translateX(1.5em);
         &.freeze {
-          transform: translateY(-2.4em);
+          transform: translate(1em, -2em);
         }
       }
     }
@@ -60,7 +64,7 @@ label {
       ~ label {
         font-size: var(--roboto--12px);
         opacity: 1;
-        transform: translateY(-2.4em);
+        transform: translate(0.325em, -1.5em);
       }
     }
 
@@ -75,15 +79,26 @@ label {
       left: 0;
       font-size: var(--roboto--14px);
       opacity: 0.5;
+      z-index: 3;
+      background-color: var(--white--100);
+
       &.freeze {
         font-size: var(--roboto--12px);
         opacity: 1;
-        transform: translateY(-2.4em);
+        transform: translate(0.325em, -1.5em);
       }
     }
     &:hover {
       cursor: pointer;
-      background-color: var(--white--400);
+      background-color: var(--white--200);
+    }
+  }
+  &.input-lg {
+    input {
+      padding: 10px 32px;
+      ~ label {
+        padding-left: 1em;
+      }
     }
   }
 }
