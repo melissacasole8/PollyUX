@@ -1,5 +1,6 @@
 @import "tokens.css";
 @import "components/container/container.css";
+@import "chosen_v1.8.7/chosen.css";
 @import "components/nav/nav.css";
 @import "components/card/card.css";
 @import "components/input_group/input-group.css";

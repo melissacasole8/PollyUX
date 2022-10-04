@@ -135,6 +135,15 @@
 .table-container table tbody tr:last-of-type td:first-of-type {
   border-bottom-left-radius: 10px;
 }
+.table-container .actions {
+  justify-content: space-between;
+}
+.table-container .actions .select {
+  width: 20%;
+}
+.table-container .actions .select .chosen-container {
+  width: 100% !important;
+}
 
 @media (max-width: 900px) {
   .table-fluid thead {

@@ -76,6 +76,7 @@
     input {
       padding: 0.15em 1em;
       ~ label {
+        display: none;
         transform: translateY(0.05em);
       }
     }

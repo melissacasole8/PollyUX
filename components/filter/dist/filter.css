@@ -52,8 +52,11 @@
   padding-right: 1em;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
+}
+.column .choices:not(:first-of-type) {
+  margin: 0 3em;
 }
 .column .filter-section-title {
   margin-bottom: 0.675em;

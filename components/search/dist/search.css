@@ -68,6 +68,7 @@
   padding: 0.15em 1em;
 }
 .search.search-sm input ~ label {
+  display: none;
   transform: translateY(0.05em);
 }
 

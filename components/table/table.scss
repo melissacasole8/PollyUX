@@ -169,6 +169,15 @@
       }
     }
   }
+  .actions {
+    justify-content: space-between;
+    .select {
+      width: 20%;
+      .chosen-container {
+        width: 100% !important;
+      }
+    }
+  }
 }
 
 // responsiveness
