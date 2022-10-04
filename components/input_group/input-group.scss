@@ -54,7 +54,8 @@ label {
 
     &.w-icon {
       ~ label {
-        transform: translate(0.225em, -2em);
+        transform: translateX(1.5em);
+
         &.freeze {
           transform: translate(0.225em, -2em);
         }

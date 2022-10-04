@@ -49,7 +49,7 @@ label {
   padding: 0.765em;
 }
 .input-group .form-control.w-icon ~ label {
-  transform: translate(0.225em, -2em);
+  transform: translateX(1.5em);
 }
 .input-group .form-control.w-icon ~ label.freeze {
   transform: translate(0.225em, -2em);
