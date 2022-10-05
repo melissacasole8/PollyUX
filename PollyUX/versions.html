@@ -15,27 +15,39 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
     <link rel="stylesheet" href="../main.css" />
 
-  <!--heap code tracking-->
-  <script type="text/javascript">
-    window.heap = window.heap || [], heap.load = function (e, t) {
-      window.heap.appid = e, window.heap.config = t = t || {};
-      var r = document.createElement("script");
-      r.type = "text/javascript", r.async = !0, r.src = "https://cdn.heapanalytics.com/js/heap-" + e + ".js";
-      var a = document.getElementsByTagName("script")[0];
-      a.parentNode.insertBefore(r, a);
-      for (var n = function (e) {
-          return function () {
-            heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
-          }
-        }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "resetIdentity",
-          "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"
-        ], o = 0; o < p.length; o++) heap[p[o]] = n(p[o])
-    };
-    heap.load("3073297010");
-  </script>
-   <!--userpilot tracking code-->
-  <script>window.userpilotSettings = {token: "NX-23f6cc0f"};</script> 
-<script src="https://js.userpilot.io/sdk/latest.js"></script>
+    <!--heap code tracking-->
+    <script type="text/javascript">
+        window.heap = window.heap || [], heap.load = function (e, t) {
+            window.heap.appid = e, window.heap.config = t = t || {};
+            var r = document.createElement("script");
+            r.type = "text/javascript", r.async = !0, r.src = "https://cdn.heapanalytics.com/js/heap-" + e + ".js";
+            var a = document.getElementsByTagName("script")[0];
+            a.parentNode.insertBefore(r, a);
+            for (var n = function (e) {
+                    return function () {
+                        heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                    }
+                }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify",
+                    "resetIdentity",
+                    "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"
+                ], o = 0; o < p.length; o++) heap[p[o]] = n(p[o])
+        };
+        heap.load("3073297010");
+    </script>
+    <!--userpilot tracking code-->
+    <script>
+        window.userpilotSettings = {
+            token: "NX-23f6cc0f"
+        };
+    </script>
+    <script src="https://js.userpilot.io/sdk/latest.js"></script>
+    <!--appcues tracking code-->
+    <script type="text/javascript">
+        window.AppcuesSettings = {
+            enableURLDetection: true
+        };
+    </script>
+    <script src="//fast.appcues.com/125734.js"></script>
 </head>
 
 <body>

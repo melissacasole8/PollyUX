@@ -106,4 +106,6 @@ $(".dismiss").click(function () {
 
 $(".clearAll").click(function () {
   $(this).parent().children().remove();
-});
+}); // userpilot stuff
+
+userpilot.anonymous();

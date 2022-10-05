@@ -15,27 +15,40 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
     <link rel="stylesheet" href="../main.css" />
 
-  <!--heap code tracking-->
-  <script type="text/javascript">
-    window.heap = window.heap || [], heap.load = function (e, t) {
-      window.heap.appid = e, window.heap.config = t = t || {};
-      var r = document.createElement("script");
-      r.type = "text/javascript", r.async = !0, r.src = "https://cdn.heapanalytics.com/js/heap-" + e + ".js";
-      var a = document.getElementsByTagName("script")[0];
-      a.parentNode.insertBefore(r, a);
-      for (var n = function (e) {
-          return function () {
-            heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
-          }
-        }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "resetIdentity",
-          "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"
-        ], o = 0; o < p.length; o++) heap[p[o]] = n(p[o])
-    };
-    heap.load("3073297010");
-  </script>
-   <!--userpilot tracking code-->
-  <script>window.userpilotSettings = {token: "NX-23f6cc0f"};</script> 
-<script src="https://js.userpilot.io/sdk/latest.js"></script>
+    <!--heap code tracking-->
+    <script type="text/javascript">
+        window.heap = window.heap || [], heap.load = function (e, t) {
+            window.heap.appid = e, window.heap.config = t = t || {};
+            var r = document.createElement("script");
+            r.type = "text/javascript", r.async = !0, r.src = "https://cdn.heapanalytics.com/js/heap-" + e + ".js";
+            var a = document.getElementsByTagName("script")[0];
+            a.parentNode.insertBefore(r, a);
+            for (var n = function (e) {
+                    return function () {
+                        heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                    }
+                }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify",
+                    "resetIdentity",
+                    "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"
+                ], o = 0; o < p.length; o++) heap[p[o]] = n(p[o])
+        };
+        heap.load("3073297010");
+    </script>
+    <!--userpilot tracking code-->
+    <script>
+        window.userpilotSettings = {
+            token: "NX-23f6cc0f"
+        };
+    </script>
+    <script src="https://js.userpilot.io/sdk/latest.js"></script>
+
+    <!--appcues tracking code-->
+    <script type="text/javascript">
+        window.AppcuesSettings = {
+            enableURLDetection: true
+        };
+    </script>
+    <script src="//fast.appcues.com/125734.js"></script>
 </head>
 
 <body>
@@ -110,25 +123,21 @@
                         <div class="filter-row">
                             <div class="input-wrap">
                                 <div class="input-group">
-                                    <input  type="text" id="productName" 
-                                        class="form-control " aria-label="Product Name"
+                                    <input type="text" id="productName" class="form-control " aria-label="Product Name"
                                         aria-describedby="basic-addon1" />
                                     <label for="productName">Product Name</label>
                                 </div>
                             </div>
                             <div class="input-wrap">
                                 <div class="input-group">
-                                    <input  type="text" id="productCode" 
-                                        class="form-control " aria-label="Product Name"
+                                    <input type="text" id="productCode" class="form-control " aria-label="Product Name"
                                         aria-describedby="basic-addon1" />
                                     <label for="productCode">Product Code</label>
                                 </div>
                             </div>
                             <div class="input-wrap">
                                 <div class="input-group">
-                                    <input type="text"
-                                        id="Other"
-                                        class="form-control "
+                                    <input type="text" id="Other" class="form-control "
                                         aria-label="Other Keywords (ex: FHA, Conventioanl)"
                                         aria-describedby="basic-addon1" />
                                     <label for="Other">Other Keywords (ex: FHA,
@@ -192,62 +201,62 @@
                         </div>
                     </section>
                     <section>
-                      <div class="column">
-                          <div class="choices">
-                            <h1 class="filter-section-title">Status</h1>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="active" checked >
-                                <label class="form-check-label" for="active" >
-                                  Active
-                                </label>
+                        <div class="column">
+                            <div class="choices">
+                                <h1 class="filter-section-title">Status</h1>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="active" checked>
+                                    <label class="form-check-label" for="active">
+                                        Active
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="inactive">
+                                    <label class="form-check-label" for="inactive">
+                                        Inactive
+                                    </label>
+                                </div>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="inactive" >
-                                <label class="form-check-label" for="inactive">
-                                  Inactive
-                                </label>
+                            <div class="choices">
+                                <h1 class="filter-section-title">Rates</h1>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="rateFloor">
+                                    <label class="form-check-label" for="rateFloor">
+                                        Has Rate Floor
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="rateCeiling">
+                                    <label class="form-check-label" for="rateCeiling">
+                                        Has Rate Ceiling
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="choices">
+                                <h1 class="filter-section-title">Locks</h1>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="lock">
+                                    <label class="form-check-label" for="lock">
+                                        Custom Lock Periods
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="choices">
+                                <h1 class="filter-section-title">Hedge</h1>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="no">
+                                    <label class="form-check-label" for="no">
+                                        No
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="yes">
+                                    <label class="form-check-label" for="yes">
+                                        Yes
+                                    </label>
+                                </div>
                             </div>
                         </div>
-                         <div class="choices">
-                            <h1 class="filter-section-title">Rates</h1>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="rateFloor" >
-                                <label class="form-check-label" for="rateFloor" >
-                                Has Rate Floor
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="rateCeiling" >
-                                <label class="form-check-label" for="rateCeiling">
-                                  Has Rate Ceiling
-                                </label>
-                            </div>
-                        </div>
-                         <div class="choices">
-                            <h1 class="filter-section-title">Locks</h1>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="lock" >
-                                <label class="form-check-label" for="lock" >
-                                  Custom Lock Periods
-                                </label>
-                            </div>
-                        </div>
-                         <div class="choices">
-                            <h1 class="filter-section-title">Hedge</h1>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="no" >
-                                <label class="form-check-label" for="no" >
-                                  No
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="yes" >
-                                <label class="form-check-label" for="yes">
-                                  Yes
-                                </label>
-                            </div>
-                        </div>
-                      </div>
                     </section>
                     <footer>
                         <div class="btn btn-primary btn-sm pill">Apply</div>
