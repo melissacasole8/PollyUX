@@ -96,7 +96,9 @@ $(".filter-handle").click(function () {
   var icon = $(".filter-handle").find("svg");
   $(icon).toggleClass("rotate180");
   $(filter).slideToggle("slow");
-  $(this).text($(this).text() == "Hide Filters" ? "Show Filters" : "Hide Filters");
+  $(this).text(
+    $(this).text() == "Hide Filters" ? "Show Filters" : "Hide Filters"
+  );
   $(this).append("<i class='fas fa-caret-down')</i>");
 }); //remove badges one by one
 
@@ -106,6 +108,4 @@ $(".dismiss").click(function () {
 
 $(".clearAll").click(function () {
   $(this).parent().children().remove();
-}); // userpilot stuff
-
-userpilot.anonymous();
+});
